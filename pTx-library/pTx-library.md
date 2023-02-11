@@ -12,7 +12,7 @@ gradient and RF informations, as well as the pulse duration, the nominal flip an
 
 - Accessing the library: either using the Siemens C2P platform (https://webclient.eu.api.teamplay.siemens.com/#/c2p) or using a classic Siemens C2P paperwork.
 
-- For a detailed description of the library, see the [](https://github.com/FranckMauconduit/MRI-packages-siemens/blob/main/pTx-library/library_pTx_documentation.pdf)
+- For a detailed description of the library, see the [pTx library documentation](https://github.com/FranckMauconduit/MRI-packages-siemens/blob/main/pTx-library/library_pTx_documentation.pdf)
 
 ## Related articles
 

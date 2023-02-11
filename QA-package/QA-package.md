@@ -20,7 +20,7 @@ Mauconduit F et al, A fast quality assessment and follow-up of transmit and rece
 Proceedings of the ISMRM 2018, Paris, France, p4221. https://archive.ismrm.org/2018/4221.html 
 
 Mauconduit F et al, Fully automated fBIRN-like stability assessment: follow-up and case report at 7T.
-Proceedings of the ISMRM 2020, Paris, France, p4005. https://archive.ismrm.org/2020/4005.html 
+Proceedings of the ISMRM 2020, Virtual Conference, p4005. https://archive.ismrm.org/2020/4005.html 
 
 ## Versions
 

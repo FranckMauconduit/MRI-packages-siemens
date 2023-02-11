@@ -1,4 +1,5 @@
 # MRI-packages-siemens
+> CEA NeuroSpin, MR methodological group
 
 This is a list of MRI sequence and reconstruction packages that are shared by our research group as Siemens C2P packages. You will find a short description of the package, informations about its availability on the different system versions, etc.
 

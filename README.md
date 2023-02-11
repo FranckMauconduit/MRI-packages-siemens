@@ -12,7 +12,7 @@ This is a list of MRI sequence and reconstruction packages that are shared by ou
 
 - Quality assurance package (will be added soon)
 
-- PTx Quality assurance package (will be added soon)
+- Quality assurancefor pTx package (will be added soon)
 
 - ns_GRE_arb: a GRE sequence enabling arbitrary k-space trajectories (will be added soon)
 

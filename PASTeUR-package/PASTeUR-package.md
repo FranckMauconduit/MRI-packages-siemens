@@ -11,13 +11,11 @@ The PASTeUR package contains 3D anatomical sequences – a GRE3d, a SPACE (with 
 
 - Softawre versions: VE12U, VE12U-AP01, VE12U-SP01, VE12U-AP04 and VB17 (pTx Step 2.3)
 
-- Limitations: Limited to be used with the Nova pTx coil
+- Limitations: This package of sequences is meant to be used with the Nova pTx coil for which the Universal Pulses have been designed.
 
 - Accessing the package: either using the Siemens C2P platform (https://webclient.eu.api.teamplay.siemens.com/#/c2p) or using a classic Siemens C2P paper work.
 
 - Link to documentation: [PASTeUR_package](https://github.com/FranckMauconduit/MRI-packages-siemens/blob/main/PASTeUR-package/PASTeUR_documentation.pdf)
-
-## Content of the package
 
 ## Related articles
 
@@ -42,3 +40,5 @@ Proceedings of the ISMRM 2018, Paris, France, p1133. https://archive.ismrm.org/2
 ## Version
 
 - Current version: 1.3
+This version contains GRE3D, MPRAGE, MP2RAGE SPACE, FLAIR and DIR sequences
+

@@ -6,13 +6,15 @@ This is a list of MRI sequence and reconstruction packages that are shared by ou
 
 - [PASTeUR package](https://github.com/FranckMauconduit/MRI-packages-siemens/blob/main/PASTeUR-package/PASTeUR-package.md)
 
-- tfl_b1map package (will be added soon)
+- [ns_tfl_rfmap package](https://github.com/FranckMauconduit/MRI-packages-siemens/blob/main/ns_tfl_rfmap-package/ns_tfl_rfmap-package.md)
 
-- Actual flip angle package: AFI (will be added soon)
+- Actual flip angle (AFI) package: (will be added soon)
 
-- Quality assurance package (will be added soon)
+- pTx SBB VE12U package: (will be added soon)
 
-- Quality assurancefor pTx package (will be added soon)
+- [Quality assurance package](https://github.com/FranckMauconduit/MRI-packages-siemens/blob/main/QA-package/QA-package.md)
+
+- Quality assurance for pTx package (will be added soon)
 
 - ns_GRE_arb: a GRE sequence enabling arbitrary k-space trajectories (will be added soon)
 

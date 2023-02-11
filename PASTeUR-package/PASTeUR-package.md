@@ -13,9 +13,9 @@ The PASTeUR package contains 3D anatomical sequences – a GRE3d, a SPACE (with 
 
 - Limitations: This package of sequences is meant to be used with the Nova pTx coil for which the Universal Pulses have been designed.
 
-- Accessing the package: either using the Siemens C2P platform (https://webclient.eu.api.teamplay.siemens.com/#/c2p) or using a classic Siemens C2P paper work.
+- Accessing the package: either using the Siemens C2P platform (https://webclient.eu.api.teamplay.siemens.com/#/c2p) or using a classic Siemens C2P paperwork.
 
-- Link to documentation: [PASTeUR_package](https://github.com/FranckMauconduit/MRI-packages-siemens/blob/main/PASTeUR-package/PASTeUR_documentation.pdf)
+- For a detailed description of the package, see the [PASTeUR package documentation](https://github.com/FranckMauconduit/MRI-packages-siemens/blob/main/PASTeUR-package/PASTeUR_documentation.pdf)
 
 ## Related articles
 
@@ -37,13 +37,13 @@ Magn Reson Med. 2020. https://doi.org/10.1002/mrm.28441.
 Wu X et al, The travelling pulses: multicenter evaluation of universal pulses at 7T.
 Proceedings of the ISMRM 2018, Paris, France, p1133. https://archive.ismrm.org/2018/1133.html 
 
-## Version
+## Versions
 
-- Version: 1.4
+- Version 1.4
 
 In preparation, release planned for June 2023.
 
-- Version: 1.3
+- Version 1.3
 
 This version contains GRE3D, MPRAGE, MP2RAGE SPACE, FLAIR and DIR sequences
 

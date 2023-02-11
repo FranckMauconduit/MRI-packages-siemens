@@ -39,6 +39,11 @@ Proceedings of the ISMRM 2018, Paris, France, p1133. https://archive.ismrm.org/2
 
 ## Version
 
-- Current version: 1.3
+- Version: 1.4
+
+In preparation, release planned for June 2023.
+
+- Version: 1.3
+
 This version contains GRE3D, MPRAGE, MP2RAGE SPACE, FLAIR and DIR sequences
 

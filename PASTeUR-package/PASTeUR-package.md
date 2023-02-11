@@ -22,19 +22,19 @@ The PASTeUR package contains 3D anatomical sequences – a GRE3d, a SPACE (with 
 ## Related articles
 
 Gras V et al, Homogeneous non-selective and slice-selective parallel-transmit excitations at 7 Tesla with universal pulses: A validation study on two commercial RF coils.
-PLOS ONE 12(8), e0183562. doi: https://dx.plos.org/10.1371/journal.pone.0183562
+PLOS ONE. 2017;12(8). https://dx.plos.org/10.1371/journal.pone.0183562
 
 Gras V et al, Design of universal parallel-transmit refocusing k(T)-point pulses and application to 3D T(2)-weighted imaging at 7T.
-Magn Reson Med. 2018 Jul;80(1):53-65. doi: 10.1002/mrm.27001.
+Magn Reson Med. 2018 Jul;80(1):53-65. https://doi.org/10.1002/mrm.27001.
 
 Gras V et al, Robust nonadiabatic T(2) preparation using universal parallel-transmit k(T)-point pulses for 3D FLAIR imaging at 7T.
-Magn Reson Med. 2019 May;81(5):3202-3208. doi: 10.1002/mrm.27645. Open access : https://hal.archives-ouvertes.fr/hal-02103512.
+Magn Reson Med. 2019 May;81(5):3202-3208. https://doi.org/10.1002/mrm.27645. Open access : https://hal.archives-ouvertes.fr/hal-02103512.
 
 Gras V et al, A new concept for calibration free parallel transmission.
-Magn Reson Med. 2017; 77(2):635-643. doi: https://onlinelibrary.wiley.com/doi/10.1002/mrm.26148
+Magn Reson Med. 2017; 77(2):635-643. https://onlinelibrary.wiley.com/doi/10.1002/mrm.26148
 
 Van Damme L et al, Universal non-selective excitation and refocusing pulses with improved robustness to off-resonance for Magnetic Resonance Imaging at 7 Tesla with parallel transmission.
-Magn Reson Med. 2020 doi: 10.1002/mrm.28441.
+Magn Reson Med. 2020. https://doi.org/10.1002/mrm.28441.
 
 Wu X et al, The travelling pulses: multicenter evaluation of universal pulses at 7T.
 Proceedings of the ISMRM 2018, Paris, France, p1133. https://archive.ismrm.org/2018/1133.html 

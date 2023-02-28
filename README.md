@@ -9,7 +9,7 @@ This is a list of MRI sequence and reconstruction packages that are shared by ou
 
 - [ns_tfl_rfmap package](https://github.com/FranckMauconduit/MRI-packages-siemens/blob/main/ns_tfl_rfmap-package/ns_tfl_rfmap-package.md)
 
-- Actual flip angle (AFI) package: (will be added soon)
+- [Actual flip angle (AFI) package](https://github.com/FranckMauconduit/MRI-packages-siemens/blob/main/AFI-package/AFI-package.md)
 
 - [pTx library in VE12U](https://github.com/FranckMauconduit/MRI-packages-siemens/blob/main/pTx-library/pTx-library.md)
 

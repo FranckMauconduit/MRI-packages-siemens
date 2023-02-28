@@ -17,6 +17,6 @@ This is a list of MRI sequence and reconstruction packages that are shared by ou
 
 - Quality assurance for pTx package (will be added soon): QA based on B1+ maps and scattering matrix
 
-- ns_GRE_arb: a GRE sequence enabling arbitrary k-space trajectories
+- [ns_GRE_arb](https://github.com/FranckMauconduit/MRI-packages-siemens/blob/main/ns_gre_arb/ns_gre_arb.md): a GRE sequence enabling arbitrary k-space trajectories
 
 - ns_fid_calib: reference voltage calibration on X-nuclei (will be added soon)

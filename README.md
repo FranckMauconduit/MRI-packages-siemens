@@ -19,6 +19,6 @@ This is a list of MRI sequence and reconstruction packages that are shared by ou
 
 - [ns_GRE_arb](https://github.com/FranckMauconduit/MRI-packages-siemens/blob/main/ns_gre_arb/ns_gre_arb.md): a GRE sequence enabling arbitrary k-space trajectories
 
-- ns_fid_calib: reference voltage calibration on X-nuclei (will be added soon)
+- [ns_fid_calib](https://github.com/FranckMauconduit/MRI-packages-siemens/blob/main/ns_fid_calib/ns_fid_calib.md): reference voltage calibration for X-nuclei
 
-- ns_trufi: trufi sequence enabled for X-nuclei acquisitions (will be added soon)
+- [ns_trufi](https://github.com/FranckMauconduit/MRI-packages-siemens/blob/main/ns_trufi/ns_trufi.md): trufi sequence enabled for X-nuclei acquisitions

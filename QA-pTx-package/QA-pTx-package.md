@@ -13,3 +13,6 @@ The QA pTx package contains a custom B1+ map sequence (based on tfl_rfmap) to ma
 <!--
 - Accessing the package: either using the Siemens C2P platform (https://webclient.eu.api.teamplay.siemens.com/#/c2p) or using a classic Siemens C2P paperwork.
 -->
+
+- For a detailed description of the package, see the [current draft documentation](https://github.com/FranckMauconduit/MRI-packages-siemens/blob/main/QA-pTx-package/QA_pTx.pdf)
+

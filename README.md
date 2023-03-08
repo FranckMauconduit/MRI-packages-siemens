@@ -15,7 +15,7 @@ This is a list of MRI sequence and reconstruction packages that are shared by ou
 
 - [Quality assurance package](https://github.com/FranckMauconduit/MRI-packages-siemens/blob/main/QA-package/QA-package.md): Noise, SNR and fBIRN like (fMRI) QA package
 
-- Quality assurance for pTx package (will be added soon): QA based on B1+ maps and scattering matrix
+- [Quality assurance for pTx coil](https://github.com/FranckMauconduit/MRI-packages-siemens/blob/main/QA-pTx-package/QA-pTx-package.md): QA based on B1+ maps and scattering matrix
 
 - [ns_GRE_arb](https://github.com/FranckMauconduit/MRI-packages-siemens/blob/main/ns_gre_arb/ns_gre_arb.md): a GRE sequence enabling arbitrary k-space trajectories
 

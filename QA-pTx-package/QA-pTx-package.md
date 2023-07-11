@@ -16,3 +16,9 @@ The QA pTx package contains a custom B1+ map sequence (based on tfl_rfmap) to ma
 <!--
 - For a detailed description of the package, see the [current draft documentation](https://github.com/FranckMauconduit/MRI-packages-siemens/blob/main/QA-pTx-package/QA_pTx.pdf)
 -->
+
+
+## Protocols
+
+A list of suggested protocols is available [here](https://github.com/FranckMauconduit/MRI-packages-siemens/blob/main/QA-pTx-package/protocols/)
+

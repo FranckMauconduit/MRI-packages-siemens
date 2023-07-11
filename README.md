@@ -22,3 +22,5 @@ This is a list of MRI sequence and reconstruction packages that are shared by ou
 - [ns_fid_calib](https://github.com/FranckMauconduit/MRI-packages-siemens/blob/main/ns_fid_calib/ns_fid_calib.md): reference voltage calibration for X-nuclei
 
 - [ns_trufi](https://github.com/FranckMauconduit/MRI-packages-siemens/blob/main/ns_trufi/ns_trufi.md): trufi sequence enabled for X-nuclei acquisitions
+
+- restricted SAR package: more information soon

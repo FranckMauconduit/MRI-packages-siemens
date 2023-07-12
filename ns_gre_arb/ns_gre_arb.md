@@ -15,6 +15,9 @@ The ns_gre_arb sequence provide a tool to play out a readout gradient using an a
 
 ## Related articles
 
+Giliyar Radhakrishna C et al, Improving spreading projection algorithm for rapid k-space sampling trajectories through minimized off-resonance effects and gridding of low frequencies
+Magn Reson Med. 2023 Sep;90(3):1069-1085. https://doi.org/10.1002/mrm.29702
+
 Lazarus C et al, 3D variable-density SPARKLING trajectories for high-resolution T2*-weighted magnetic resonance imaging.
 NMR Biomed. 2020 Jul 1:e4349. https://doi.org/10.1002/nbm.4349
 

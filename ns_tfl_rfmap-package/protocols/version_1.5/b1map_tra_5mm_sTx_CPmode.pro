@@ -434,7 +434,7 @@
           <Label> "Protocol name" 
           <Visible> "true" 
           <Default> "Initialized by sequence" 
-          "b1map_38slc_tiamo_amp1_conj_VRef230_Sat115_Excit12_tra" 
+          "b1map" 
         }
       }
       

@@ -434,6 +434,7 @@
           <Label> "Protocol name" 
           <Visible> "true" 
           <Default> "Initialized by sequence" 
+          "FOV_shift_for_b1map_QA" 
         }
       }
       
@@ -531,110 +532,10 @@
   <Dependency."MrMS_DH_TIMCT"> {"MultiStep.IsInlineCompose" <Dll> "MrMultiStepDependencies" <Context> "ONLINE" }
   
 }
-<XProtocol> 
-{
-  <ID> 50 
-  <Userversion> 4.5 
-  
-  <ParamMap.""> 
-  {
-    <PipeService."EVA"> 
-    {
-      <Class> "PipeLinkService@MrParc" 
-      
-      <ParamLong."POOLTHREADS">  { 1  }
-      <ParamString."GROUP">  { "Calculation"  }
-      <ParamLong."DATATHREADS">  { }
-      <ParamLong."WATERMARK">  { }
-      <ParamString."tdefaultEVAProt">  { "%SiemensEvaDefProt%/Inline/Inline.evp"  }
-      <ParamFunctor."MotionCorr"> 
-      {
-        <Class> "MotionCorrDecorator@IceImagePostProcFunctors" 
-        
-        <ParamBool."EXECUTE">  { }
-        <ParamString."image_type">  { "M"  }
-        <ParamBool."save">  { }
-        <Method."ComputeImage">  { "uint64_t" "class IceAs &" "class MrPtr<class MiniHeader> &" "class ImageControl &"  }
-        <Event."ImageReady">  { "uint64_t" "class IceAs &" "class MrPtr<class MiniHeader> &" "class ImageControl &"  }
-        <Connection."c1">  { "ImageReady" "" "ComputeImage"  }
-      }
-      <ParamFunctor."Subtraction"> 
-      {
-        <Class> "Subtraction@IceImagePostProcFunctors" 
-        
-        <ParamBool."EXECUTE">  { }
-        <ParamString."image_type">  { "M"  }
-        <ParamBool."save">  { "true"  }
-        <ParamLong."subtrahend">  { 1  }
-        <ParamString."string_indices">  { }
-        <ParamBool."indices">  { "true"  }
-        <ParamLong."subtraction_group">  { 1  }
-        <ParamBool."auto">  { }
-        <ParamLong."fact">  { 1  }
-        <ParamLong."offs">  { }
-        <ParamString."BolusAgent">  { }
-        <ParamBool."save_orig">  { "true"  }
-        <Method."ComputeImage">  { "uint64_t" "class IceAs &" "class MrPtr<class MiniHeader> &" "class ImageControl &"  }
-        <Event."ImageReady">  { "uint64_t" "class IceAs &" "class MrPtr<class MiniHeader> &" "class ImageControl &"  }
-        <Connection."c1">  { "ImageReady" "" "ComputeImage"  }
-      }
-      <ParamFunctor."StdDevFactory"> 
-      {
-        <Class> "StdDevFactory@IceImagePostProcFunctors" 
-        
-        <ParamBool."EXECUTE">  { }
-        <ParamString."image_type">  { "M"  }
-        <ParamBool."sag">  { }
-        <ParamBool."cor">  { }
-        <ParamBool."tra">  { }
-        <ParamBool."time">  { }
-        <ParamBool."save_orig">  { "true"  }
-        <ParamBool."stddev">  { }
-        <Method."ComputeImage">  { "uint64_t" "class IceAs &" "class MrPtr<class MiniHeader> &" "class ImageControl &"  }
-        <Event."ImageReady">  { "uint64_t" "class IceAs &" "class MrPtr<class MiniHeader> &" "class ImageControl &"  }
-        <Connection."c1">  { "ImageReady" "" "ComputeImage"  }
-      }
-      <ParamFunctor."MIPFactory"> 
-      {
-        <Class> "MIPFactory@IceImagePostProcFunctors" 
-        
-        <ParamBool."EXECUTE">  { }
-        <ParamString."image_type">  { "M"  }
-        <ParamBool."sag">  { }
-        <ParamBool."cor">  { }
-        <ParamBool."tra">  { }
-        <ParamBool."time">  { }
-        <ParamBool."radial">  { }
-        <ParamLong."no_radial_views">  { 1  }
-        <ParamChoice."axis_radial_views">  { <Limit> { "L-R" "A-P" "H-F" } "L-R"  }
-        <ParamBool."save_orig">  { "true"  }
-        <Method."ComputeImage">  { "uint64_t" "class IceAs &" "class MrPtr<class MiniHeader> &" "class ImageControl &"  }
-        <Event."ImageReady">  { "uint64_t" "class IceAs &" "class MrPtr<class MiniHeader> &" "class ImageControl &"  }
-        <Connection."c1">  { "ImageReady" "" "ComputeImage"  }
-      }
-      <ParamFunctor."MPRFactory"> 
-      {
-        <Class> "MPRFactory" 
-        
-        <ParamBool."EXECUTE">  { }
-        <ParamString."image_type">  { "M"  }
-        <ParamBool."sag">  { }
-        <ParamBool."cor">  { }
-        <ParamBool."tra">  { }
-        <ParamBool."save_orig">  { "true"  }
-        <Method."ComputeImage">  { "uint64_t" "class IceAs &" "class MrPtr<class MiniHeader> &" "class ImageControl &"  }
-        <Event."ImageReady">  { "uint64_t" "class IceAs &" "class MrPtr<class MiniHeader> &" "class ImageControl &"  }
-        <Connection."c1">  { "ImageReady" "" "ComputeImage"  }
-      }
-      <ParamBool."save_orig">  { "true"  }
-    }
-  }
-}
 ### ASCCONV BEGIN object=MrProtDataImpl@MrProtocolData version=51280000 converter=%MEASCONST%/ConverterList/Prot_Converter.txt ###
 ulVersion	 = 	51280000
-tSequenceFileName	 = 	"%CustomerSeq%\ns_tfl_rfmap"
-tProtocolName	 = 	"Initialized by sequence"
-tdefaultEVAProt	 = 	"%SiemensEvaDefProt%\Inline\Inline.evp"
+tSequenceFileName	 = 	"%CustomerSeq%\ns_profile"
+tProtocolName	 = 	"FOV_shift_for_b1map_QA"
 lScanRegionPosTra	 = 	0.0
 ucScanRegionPosValid	 = 	0x1
 lPtabAbsStartPosZ	 = 	0
@@ -647,19 +548,18 @@ ucAAMode	 = 	1
 ucAARegionMode	 = 	1
 ucAARefMode	 = 	1
 ucReconstructionMode	 = 	1
-ucOneSeriesForAllMeas	 = 	4
+ucOneSeriesForAllMeas	 = 	1
 ucPHAPSMode	 = 	1
 ulWrapUpMagn	 = 	1
 lAverages	 = 	1
 dAveragesDouble	 = 	1.0
-lScanTimeSec	 = 	50
-lTotalScanTimeSec	 = 	50
-dRefSNR	 = 	279284.800875
-dRefSNR_VOI	 = 	279284.800875
+lScanTimeSec	 = 	1
+lTotalScanTimeSec	 = 	1
+dRefSNR	 = 	14367.9643652
+dRefSNR_VOI	 = 	33674.916481
 ucMotionCorr	 = 	1
 ucCineMode	 = 	1
-ucSequenceType	 = 	1
-ucCoilCombineMode	 = 	2
+ucCoilCombineMode	 = 	1
 ucFlipAngleMode	 = 	1
 lTOM	 = 	1
 ucReadOutMode	 = 	1
@@ -673,12 +573,6 @@ dTissueT1	 = 	10.0
 dTissueT2	 = 	5.0
 lInvContrasts	 = 	1
 ulReaquisitionMode	 = 	1
-sProtConsistencyInfo.tBaselineString	 = 	"N4_VE12U_LATEST_20181126"
-sProtConsistencyInfo.tSystemType	 = 	"442"
-sProtConsistencyInfo.flNominalB0	 = 	6.98093605042
-sProtConsistencyInfo.flGMax	 = 	40.0
-sProtConsistencyInfo.flRiseTime	 = 	5.0
-sProtConsistencyInfo.lMaximumNofRxReceiverChannels	 = 	32
 sGRADSPEC.ucMode	 = 	1
 sGRADSPEC.ucNoiseReduction	 = 	1
 sGRADSPEC.asGPAData.__attribute__.size	 = 	1
@@ -709,14 +603,13 @@ sGRADSPEC.asGPAData[0].sCrossTermCompensationZY.aflTimeConstant.__attribute__.si
 sGRADSPEC.alShimCurrent.__attribute__.size	 = 	15
 sTXSPEC.lBCExcitationMode	 = 	0
 sTXSPEC.lBCSeqExcitationMode	 = 	4
-sTXSPEC.ucRFPulseType	 = 	4
+sTXSPEC.ucRFPulseType	 = 	2
 sTXSPEC.ucExcitMode	 = 	1
 sTXSPEC.ucSimultaneousExcitation	 = 	1
 sTXSPEC.lB1ShimMode	 = 	1
 sTXSPEC.asNucleusInfo.__attribute__.size	 = 	2
 sTXSPEC.asNucleusInfo[0].tNucleus	 = 	"1H"
 sTXSPEC.asNucleusInfo[0].lCoilSelectIndex	 = 	0
-sTXSPEC.asNucleusInfo[0].bHasPTXPulses	 = 	0x1
 sTXSPEC.asNucleusInfo[0].CompProtectionValues.MaxOnlineTxAmpl.__attribute__.size	 = 	16
 sTXSPEC.asNucleusInfo[0].CompProtectionValues.WorstCaseMaxOnlineTxAmpl.__attribute__.size	 = 	16
 sTXSPEC.asNucleusInfo[0].CompProtectionValues.adGainVariation.__attribute__.size	 = 	16
@@ -733,8 +626,7 @@ sTXSPEC.asNucleusInfo[1].CompProtectionValues.ZZMatrixVector.__attribute__.size	
 sTXSPEC.asNucleusInfo[1].CompProtectionValues.ScatterMatrix.ComplexData.__attribute__.size	 = 	0
 sTXSPEC.asNucleusInfo[1].aTxScaleFactorSlice.__attribute__.size	 = 	0
 sTXSPEC.aRFPULSE.__attribute__.size	 = 	256
-sTXSPEC.aRFPULSE[1].flAmplitudeNL	 = 	27.0114498138
-sTXSPEC.aRFPULSE[2].flAmplitudeNL	 = 	188.581130981
+sTXSPEC.aRFPULSE[0].flAmplitudeNL	 = 	12.3888893127
 sTXSPEC.aTxScaleFactor.__attribute__.size	 = 	16
 sTXSPEC.aPTXRFPulse.__attribute__.size	 = 	0
 sTXSPEC.B1CorrectionParameters.bValid	 = 	0x0
@@ -748,7 +640,7 @@ sRXSPEC.asNucleusInfo[0].lCoilSelectIndex	 = 	0
 sRXSPEC.asNucleusInfo[1].lCoilSelectIndex	 = 	-1
 sRXSPEC.alVariCapVoltages.__attribute__.size	 = 	4
 sRXSPEC.alDwellTime.__attribute__.size	 = 	128
-sRXSPEC.alDwellTime[0]	 = 	7800
+sRXSPEC.alDwellTime[0]	 = 	2100
 sAdjData.uiAdjFreMode	 = 	1
 sAdjData.uiAdjShimMode	 = 	1
 sAdjData.uiAdjWatSupMode	 = 	1
@@ -759,76 +651,32 @@ sAdjData.lCoupleAdjVolTo	 = 	1
 sAdjData.uiAdjB0AcqMode	 = 	1
 sAdjData.uiAdjB1AcqMode	 = 	1
 alTR.__attribute__.size	 = 	256
-alTR[0]	 = 	5000000
+alTR[0]	 = 	200000
 alTI.__attribute__.size	 = 	256
-alTI[0]	 = 	300000
-alTI[1]	 = 	1000000
 alTD.__attribute__.size	 = 	256
 alTE.__attribute__.size	 = 	256
-alTE[0]	 = 	1880
 acFlowComp.__attribute__.size	 = 	256
 acFlowComp[0]	 = 	1
-sSliceArray.lSize	 = 	5
+sSliceArray.lSize	 = 	1
 sSliceArray.lConc	 = 	1
 sSliceArray.ucMode	 = 	4
 sSliceArray.ucAnatomicalSliceMode	 = 	4
 sSliceArray.asSlice.__attribute__.size	 = 	256
-sSliceArray.asSlice[0].dThickness	 = 	2.5
-sSliceArray.asSlice[0].dPhaseFOV	 = 	200.0
-sSliceArray.asSlice[0].dReadoutFOV	 = 	320.0
-sSliceArray.asSlice[0].dInPlaneRot	 = 	1.57079632679
-sSliceArray.asSlice[0].sPosition.dTra	 = 	-10.0
+sSliceArray.asSlice[0].dThickness	 = 	5.0
+sSliceArray.asSlice[0].dPhaseFOV	 = 	240.0
+sSliceArray.asSlice[0].dReadoutFOV	 = 	240.0
 sSliceArray.asSlice[0].sNormal.dTra	 = 	1.0
-sSliceArray.asSlice[1].dThickness	 = 	2.5
-sSliceArray.asSlice[1].dPhaseFOV	 = 	200.0
-sSliceArray.asSlice[1].dReadoutFOV	 = 	320.0
-sSliceArray.asSlice[1].dInPlaneRot	 = 	1.57079632679
-sSliceArray.asSlice[1].sPosition.dTra	 = 	-5.0
-sSliceArray.asSlice[1].sNormal.dTra	 = 	1.0
-sSliceArray.asSlice[2].dThickness	 = 	2.5
-sSliceArray.asSlice[2].dPhaseFOV	 = 	200.0
-sSliceArray.asSlice[2].dReadoutFOV	 = 	320.0
-sSliceArray.asSlice[2].dInPlaneRot	 = 	1.57079632679
-sSliceArray.asSlice[2].sNormal.dTra	 = 	1.0
-sSliceArray.asSlice[3].dThickness	 = 	2.5
-sSliceArray.asSlice[3].dPhaseFOV	 = 	200.0
-sSliceArray.asSlice[3].dReadoutFOV	 = 	320.0
-sSliceArray.asSlice[3].dInPlaneRot	 = 	1.57079632679
-sSliceArray.asSlice[3].sPosition.dTra	 = 	5.0
-sSliceArray.asSlice[3].sNormal.dTra	 = 	1.0
-sSliceArray.asSlice[4].dThickness	 = 	2.5
-sSliceArray.asSlice[4].dPhaseFOV	 = 	200.0
-sSliceArray.asSlice[4].dReadoutFOV	 = 	320.0
-sSliceArray.asSlice[4].dInPlaneRot	 = 	1.57079632679
-sSliceArray.asSlice[4].sPosition.dTra	 = 	10.0
-sSliceArray.asSlice[4].sNormal.dTra	 = 	1.0
 sSliceArray.alSliceAcqOrder.__attribute__.size	 = 	256
-sSliceArray.alSliceAcqOrder[1]	 = 	1
-sSliceArray.alSliceAcqOrder[2]	 = 	2
-sSliceArray.alSliceAcqOrder[3]	 = 	3
-sSliceArray.alSliceAcqOrder[4]	 = 	4
 sSliceArray.anAsc.__attribute__.size	 = 	256
-sSliceArray.anAsc[1]	 = 	1
-sSliceArray.anAsc[2]	 = 	2
-sSliceArray.anAsc[3]	 = 	3
-sSliceArray.anAsc[4]	 = 	4
 sSliceArray.anPos.__attribute__.size	 = 	256
-sSliceArray.anPos[1]	 = 	1
-sSliceArray.anPos[2]	 = 	2
-sSliceArray.anPos[3]	 = 	3
-sSliceArray.anPos[4]	 = 	4
 sSliceArray.sTSat.dThickness	 = 	50.0
 sSliceArray.sTSat.ulShape	 = 	1
 sGroupArray.lSize	 = 	1
 sGroupArray.asGroup.__attribute__.size	 = 	256
-sGroupArray.asGroup[0].nSize	 = 	5
-sGroupArray.asGroup[0].dDistFact	 = 	1.0
+sGroupArray.asGroup[0].nSize	 = 	1
+sGroupArray.asGroup[0].dDistFact	 = 	0.2
 sGroupArray.anMember.__attribute__.size	 = 	258
-sGroupArray.anMember[1]	 = 	1
-sGroupArray.anMember[2]	 = 	2
-sGroupArray.anMember[3]	 = 	3
-sGroupArray.anMember[4]	 = 	4
-sGroupArray.anMember[5]	 = 	-1
+sGroupArray.anMember[1]	 = 	-1
 sGroupArray.sPSat.dThickness	 = 	50.0
 sGroupArray.sPSat.ulShape	 = 	1
 sRSatArray.asElm.__attribute__.size	 = 	8
@@ -881,17 +729,17 @@ sKSpace.dSliceResolution	 = 	1.0
 sKSpace.dAngioDynCentralRegionA	 = 	20.0
 sKSpace.dAngioDynSamplingDensityB	 = 	25.0
 sKSpace.dSeqPhasePartialFourierForSNR	 = 	1.0
-sKSpace.lBaseResolution	 = 	64
-sKSpace.lPhaseEncodingLines	 = 	40
-sKSpace.lPartitions	 = 	16
-sKSpace.lImagesPerSlab	 = 	16
+sKSpace.lBaseResolution	 = 	600
+sKSpace.lPhaseEncodingLines	 = 	256
+sKSpace.lPartitions	 = 	64
+sKSpace.lImagesPerSlab	 = 	64
 sKSpace.lRadialViews	 = 	64
 sKSpace.lRadialInterleavesPerImage	 = 	2
 sKSpace.lLinesPerShot	 = 	1
-sKSpace.unReordering	 = 	2
+sKSpace.unReordering	 = 	1
 sKSpace.ucPhasePartialFourier	 = 	16
 sKSpace.ucSlicePartialFourier	 = 	16
-sKSpace.ucAveragingMode	 = 	2
+sKSpace.ucAveragingMode	 = 	1
 sKSpace.ucMultiSliceMode	 = 	2
 sKSpace.ucDimension	 = 	2
 sKSpace.ucTrajectory	 = 	1
@@ -900,7 +748,7 @@ sKSpace.ucAsymmetricEchoMode	 = 	1
 sKSpace.ucPOCS	 = 	1
 sKSpace.ucReadoutPartialFourier	 = 	16
 sFastImaging.lEPIFactor	 = 	1
-sFastImaging.lTurboFactor	 = 	16
+sFastImaging.lTurboFactor	 = 	1
 sFastImaging.lSliceTurboFactor	 = 	1
 sFastImaging.lSegments	 = 	1
 sFastImaging.ulEnableRFSpoiling	 = 	0x1
@@ -1001,20 +849,14 @@ sMds.sMdsPreScanNormalize.ucMode	 = 	2
 sMds.sMdsPreScanNormalize.ucStackMode	 = 	4
 sMds.sMdsPreScanNormalize.lNPELin	 = 	18
 sAAInitialOffset.Laterality	 = 	0
-sAAInitialOffset.SliceInformation.dInPlaneRot	 = 	1.57079632679
-sAAInitialOffset.SliceInformation.sPosition.dSag	 = 	2.0
-sAAInitialOffset.SliceInformation.sPosition.dCor	 = 	11.4
-sAAInitialOffset.SliceInformation.sPosition.dTra	 = 	18.8
-sAAInitialOffset.SliceInformation.sNormal.dTra	 = 	1.0
 alRepetitionsDelayTimeMs.__attribute__.size	 = 	64
 adFlipAngleDegree.__attribute__.size	 = 	32
-adFlipAngleDegree[0]	 = 	8.0
-adFlipAngleDegree[1]	 = 	8.0
+adFlipAngleDegree[0]	 = 	1.0
 aulServicePara.__attribute__.size	 = 	5
 uiPerProxy2Skip.__attribute__.size	 = 	2
-sCoilSelectMeas.dOverallImageScaleFactor	 = 	0.4096
+sCoilSelectMeas.dOverallImageScaleFactor	 = 	0.533333333333
 sCoilSelectMeas.dOverallImageScaleCorrectionFactor	 = 	1.0
-sCoilSelectMeas.sCoilStringForConversion	 = 	"HC"
+sCoilSelectMeas.sCoilStringForConversion	 = 	"AC"
 sCoilSelectMeas.dAutoCoilSelectIlluRangeScale	 = 	0.699999988079
 sCoilSelectMeas.aRxCoilSelectData.__attribute__.size	 = 	2
 sCoilSelectMeas.aRxCoilSelectData[0].tNucleus	 = 	"1H"
@@ -1459,14 +1301,7 @@ sEFISPEC.sEFIData.sPhaseshiftAndWeightsPara.__attribute__.size	 = 	4
 sEFISPEC.sEFIData.sOffsetParameter.aflOffsetK.__attribute__.size	 = 	3
 sEFISPEC.sEFIData.sOffsetParameter.alBOffsetK.__attribute__.size	 = 	3
 sWipMemBlock.alFree.__attribute__.size	 = 	64
-sWipMemBlock.alFree[3]	 = 	20
-sWipMemBlock.alFree[9]	 = 	80
-sWipMemBlock.alFree[11]	 = 	1
-sWipMemBlock.alFree[27]	 = 	1
-sWipMemBlock.alFree[28]	 = 	2
-sWipMemBlock.alFree[63]	 = 	12345
 sWipMemBlock.adFree.__attribute__.size	 = 	16
-sWipMemBlock.adFree[10]	 = 	9.0
 sWipMemBlock.adRes.__attribute__.size	 = 	3
 ucBOLDParadigmArray.__attribute__.size	 = 	256
 sParametricMapping.ucParametricMap	 = 	1

@@ -434,6 +434,7 @@
           <Label> "Protocol name" 
           <Visible> "true" 
           <Default> "Initialized by sequence" 
+          "Scattering_Matrix_QA"
         }
       }
       
@@ -534,7 +535,7 @@
 ### ASCCONV BEGIN object=MrProtDataImpl@MrProtocolData version=51280000 converter=%MEASCONST%/ConverterList/Prot_Converter.txt ###
 ulVersion	 = 	51280000
 tSequenceFileName	 = 	"%CustomerSeq%\ns_smatrix"
-tProtocolName	 = 	"Initialized by sequence"
+tProtocolName	 = 	"Scattering_Matrix_QA"
 lScanRegionPosTra	 = 	0.0
 ucScanRegionPosValid	 = 	0x1
 lPtabAbsStartPosZ	 = 	0
@@ -571,12 +572,6 @@ dTissueT1	 = 	10.0
 dTissueT2	 = 	5.0
 lInvContrasts	 = 	1
 ulReaquisitionMode	 = 	1
-sProtConsistencyInfo.tBaselineString	 = 	"N4_VE12U_LATEST_20181126"
-sProtConsistencyInfo.tSystemType	 = 	"442"
-sProtConsistencyInfo.flNominalB0	 = 	6.98093605042
-sProtConsistencyInfo.flGMax	 = 	40.0
-sProtConsistencyInfo.flRiseTime	 = 	5.0
-sProtConsistencyInfo.lMaximumNofRxReceiverChannels	 = 	32
 sGRADSPEC.ucMode	 = 	2
 sGRADSPEC.ucNoiseReduction	 = 	1
 sGRADSPEC.asGPAData.__attribute__.size	 = 	1

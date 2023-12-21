@@ -11,7 +11,7 @@ The ns_fid_calib package contains a modified fid sequence and a custom ICE recon
 - Accessing the package: either using the Siemens C2P platform (https://webclient.eu.api.teamplay.siemens.com/#/c2p) or using a classic Siemens C2P paperwork.
 
 
-- For a detailed description of the package, see the [AFI package documentation](https://github.com/FranckMauconduit/MRI-packages-siemens/blob/main/ns_fid_calib/ns_fid_calib_documentation.pdf)
+- For a detailed description of the package, see the [ns_fid_calib package documentation](https://github.com/FranckMauconduit/MRI-packages-siemens/blob/main/ns_fid_calib/ns_fid_calib_documentation.pdf)
 
 
 <!--

@@ -10,9 +10,9 @@ The ns_fid_calib package contains a modified fid sequence and a custom ICE recon
 
 - Accessing the package: either using the Siemens C2P platform (https://webclient.eu.api.teamplay.siemens.com/#/c2p) or using a classic Siemens C2P paperwork.
 
-<!--
-- For a detailed description of the package, see the [AFI package documentation](https://github.com/FranckMauconduit/MRI-packages-siemens/blob/main/AFI-package/AFI_documentation.pdf)
--->
+
+- For a detailed description of the package, see the [AFI package documentation](https://github.com/FranckMauconduit/MRI-packages-siemens/blob/main/ns_fid_calib/ns_fid_calib_documentation.pdf)
+
 
 <!--
 ## Related articles
@@ -24,3 +24,14 @@ Boulant N, Cloos M and Amadon A, A simple and analytical way to
 correct for ∆B0 inhomogeneity in the evaluation of B1 maps relying on flip angle measurements and non-selective square pulses.
 Proceedings of the ISMRM 2010, Stockholm, Sweden, p4918. https://archive.ismrm.org/2010/4918.html
 -->
+
+
+## Versions
+
+- Version 1.1
+
+In case of multi-receive coils, the signal was not averaged over the channels. Now corrected.
+
+- Version 1.0
+
+Initial release

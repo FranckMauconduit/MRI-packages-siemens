@@ -23,4 +23,8 @@ This is a list of MRI sequence and reconstruction packages that are shared by ou
 
 - [ns_trufi](https://github.com/FranckMauconduit/MRI-packages-siemens/blob/main/ns_trufi/ns_trufi.md): trufi sequence enabled for X-nuclei acquisitions
 
+<!--
 - restricted SAR package: more information soon
+-->
+
+In addition to these packages, you can have a look at the shared ICE tools developed in our group: [Ice Tools](https://github.com/FranckMauconduit/MRI-ICE-snippets/blob/main/README.md)

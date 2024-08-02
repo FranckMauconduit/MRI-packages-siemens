@@ -9,7 +9,7 @@ The PASTeUR package contains 3D anatomical sequences – a GRE3d, a SPACE (with 
 
 - Availability: Ultra high field Siemens MRI systems (7T and above)
 
-- Softawre versions: VE12U, VE12U-AP01, VE12U-SP01, VE12U-AP04 and VB17 (pTx Step 2.3)
+- Softawre versions: VE12U, VE12U-AP01, VE12U-SP01, VE12U-AP04
 
 - Limitations: This package of sequences is meant to be used with the Nova pTx coil for which the Universal Pulses have been designed.
 
@@ -39,9 +39,15 @@ Proceedings of the ISMRM 2018, Paris, France, p1133. https://archive.ismrm.org/2
 
 ## Versions
 
-- Version 1.4
+- Version 2.0
 
-In preparation, release planned for June 2023.
+An EP3D sequence is added to the package.
+
+Slab-selective universal pulses are available for all sequences.
+
+CAIPIRINHA acceleration is available for all sequences.
+
+Sequence specific improvements are added to the package.
 
 - Version 1.3
 

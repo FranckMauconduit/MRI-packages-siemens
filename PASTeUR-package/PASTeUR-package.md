@@ -5,11 +5,15 @@
 
 The PASTeUR package contains 3D anatomical sequences – a GRE3d, a SPACE (with FLAIR and DIR preparations) and a MP(2)RAGE sequence – that use Universal RF pulses to mitigate B1+ inhomogeneity. These Universal Pulses are based on an offline pulse design performed on a database of different subject field maps to be robust with respect to inter-subject variability. The PASTeUR package provides a plug and play solution for pTx systems that suppress the ubiquitous B1+ artefacts observed with the CP excitation mode. This current release is based on Classic MAGNETOM 7T Universal Pulse solutions that have been adapted to fit MAGNETOM Terra specifications (channel ordering, phase shifts, table position and scaling).
 
+## Notice
+
+We are currently working on the implementation of a XA60 version of the PASTEUR package.
+
 ## Information
 
 - Availability: Ultra high field Siemens MRI systems (7T and above)
 
-- Softawre versions: VE12U, VE12U-AP01, VE12U-SP01, VE12U-AP04
+- Softawre versions: VE12U, VE12U-AP01, VE12U-AP02, VE12U-SP01, VE12U-AP04
 
 - Limitations: This package of sequences is meant to be used with the Nova pTx coil for which the Universal Pulses have been designed.
 

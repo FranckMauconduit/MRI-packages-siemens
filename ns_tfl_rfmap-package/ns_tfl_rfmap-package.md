@@ -9,7 +9,7 @@ developed to run on 8 or 16 channel multi-transmit Terra systems as well as on s
 
 ## Information
 
-- Softawre versions: VE12U, VE12U-AP01, VE12U-SP01, VE12U-AP04
+- Softawre versions: VE12U, XA60
 
 - Accessing the package: either using the Siemens C2P platform (https://webclient.eu.api.teamplay.siemens.com/#/c2p) or using a classic Siemens C2P paperwork.
 
@@ -28,6 +28,18 @@ Amadon A et al, Slice profile corrections in the XFL B1-mapping sequence.
 Proceedings of the ISMRM 2015, Toronto, ON, Canada, p2377. https://archive.ismrm.org/2015/2377.html 
 
 ## Versions
+
+- version 1.6
+
+Support XA60 version
+
+Lookup table for slice profile correction is embedded
+
+- version 1.5
+
+Default protocol in 1Tx was failing, now corrected
+
+Improvements for QA pTx
 
 - version 1.4
 

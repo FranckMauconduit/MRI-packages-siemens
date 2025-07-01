@@ -22,7 +22,7 @@ TRAMPOLINE
 
 echo
 echo --------------------------------------- 
-echo Script: `basename $0`
+echo Script: `/usr/bin/basename $0`
 echo Version: 1.0
 echo Author:  Franck Mauconduit
 echo For more info, see:
@@ -31,21 +31,22 @@ echo ---------------------------------------
 
 
 ROOTFOLDER=/cygdrive/c/MedCom
+TEMPFOLDER=$ROOTFOLDER/temp
 
 RFSWDFile=$ROOTFOLDER/log/RFSWDHistoryListNew.log
 
-RFSWD_Protocol=$ROOTFOLDER/rfswd_current_protocol.log
+RFSWD_Protocol=$TEMPFOLDER/rfswd_current_protocol.log
 /usr/bin/rm -f $RFSWD_Protocol
 
-RFSWD_ProtList=$ROOTFOLDER/rfswd_protocol_list.txt
+RFSWD_ProtList=$TEMPFOLDER/rfswd_protocol_list.txt
 /usr/bin/rm -f $RFSWD_ProtList
 
-RFSWD_Info1=$ROOTFOLDER/rfswd_info1.txt
-RFSWD_Info2a=$ROOTFOLDER/rfswd_info2a.txt
-RFSWD_Info2b=$ROOTFOLDER/rfswd_info2b.txt
-RFSWD_Info3a=$ROOTFOLDER/rfswd_info3a.txt
-RFSWD_Info3b=$ROOTFOLDER/rfswd_info3b.txt
-RFSWD_Info4=$ROOTFOLDER/rfswd_info4.txt
+RFSWD_Info1=$TEMPFOLDER/rfswd_info1.txt
+RFSWD_Info2a=$TEMPFOLDER/rfswd_info2a.txt
+RFSWD_Info2b=$TEMPFOLDER/rfswd_info2b.txt
+RFSWD_Info3a=$TEMPFOLDER/rfswd_info3a.txt
+RFSWD_Info3b=$TEMPFOLDER/rfswd_info3b.txt
+RFSWD_Info4=$TEMPFOLDER/rfswd_info4.txt
 
 function print_rfswd_log
 {

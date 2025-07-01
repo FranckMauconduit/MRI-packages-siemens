@@ -1,6 +1,8 @@
 # RFSWD script
 > RF Safety Watch Dog script
 
+Display script: [dump_RFSWD_info.bat](https://github.com/FranckMauconduit/MRI-packages-siemens/blob/main/RFSWD_script/dump_RFSWD_info.bat)
+
 ## Short description
 
 The script extracts some of the information in the RFSWDHistoryListNew.log file on the MR system. It helps to find out the levels of SAR of a sequence and/or the limits that was reached when a sequence aborts or does not run at all.

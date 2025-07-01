@@ -23,6 +23,8 @@ This is a list of MRI sequence and reconstruction packages that are shared by ou
 
 - [ns_trufi](https://github.com/FranckMauconduit/MRI-packages-siemens/blob/main/ns_trufi/ns_trufi.md): trufi sequence enabled for X-nuclei acquisitions
 
+- [RFSWD_script](https://github.com/FranckMauconduit/MRI-packages-siemens/blob/main/RFSWD_script/RFSWD_script.md): script to dump RFSWD info of a scan
+
 <!--
 - restricted SAR package: more information soon
 -->

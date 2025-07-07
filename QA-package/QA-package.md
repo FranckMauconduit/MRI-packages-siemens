@@ -13,6 +13,9 @@ The package is designed to acquire the data in a fast manner on a spherical fant
 
 - For a detailed description of the package, see the [QA package documentation](https://github.com/FranckMauconduit/MRI-packages-siemens/blob/main/QA-package/Documentation_QualityAssurance-Sequence_Neurospin_202301.pdf)
 
+## Protocols
+
+A list of suggested protocols is available [here](https://github.com/FranckMauconduit/MRI-packages-siemens/blob/main/QA-package/protocols/)
 
 ## Related articles
 
@@ -23,6 +26,11 @@ Mauconduit F et al, Fully automated fBIRN-like stability assessment: follow-up a
 Proceedings of the ISMRM 2020, Virtual Conference, p4005. https://archive.ismrm.org/2020/4005.html 
 
 ## Versions
+
+- Version 2.5
+
+XA release available in this version
+
 
 - Version 2.4
 

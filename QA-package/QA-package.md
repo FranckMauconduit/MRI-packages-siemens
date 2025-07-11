@@ -7,7 +7,7 @@ The package is designed to acquire the data in a fast manner on a spherical fant
 
 ## Information
 
-- Softawre versions: VB17, VE11C, VE11E, VE12U-AP01, VE12U-SP01
+- Software versions: VE11C, VE11E, VE12U-AP01, VE12U-SP01, $${\color{red}NEW: XA30, XA60}
 
 - Accessing the package: either using the Siemens C2P platform (https://webclient.eu.api.teamplay.siemens.com/#/c2p) or using a classic Siemens C2P paperwork.
 

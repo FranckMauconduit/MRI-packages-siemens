@@ -9,6 +9,8 @@ The PASTeUR package contains 3D anatomical sequences – a GRE3d, a SPACE (with 
 
 We are currently working on the implementation of a XA60 version of the PASTEUR package.
 
+PASTeUR in VE12U-AP04: For 7T Terra systems that need to be ugraded with the new application pack VE12U-AP04-F34, we are able to provide a new version of the PASTeUR package.
+
 ## Information
 
 - Availability: Ultra high field Siemens MRI systems (7T and above)

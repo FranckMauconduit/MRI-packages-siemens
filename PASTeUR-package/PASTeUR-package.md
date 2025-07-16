@@ -55,6 +55,10 @@ CAIPIRINHA acceleration is available for all sequences.
 
 Sequence specific improvements are added to the package.
 
+- Version 1.31
+
+Fix sequence not running when tilting FOV to specific orientation
+
 - Version 1.3
 
 This version contains GRE3D, MPRAGE, MP2RAGE SPACE, FLAIR and DIR sequences

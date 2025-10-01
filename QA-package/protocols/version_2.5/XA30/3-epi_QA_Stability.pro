@@ -2,7 +2,7 @@
 ulVersion	 = 	63010001
 tSequenceFileName	 = 	"%CustomerSeq%\ns_qa_ep2d_fid"
 tProtocolName	 = 	"QA_Stability"
-lScanRegionPosTra	 = 	-999.0
+lScanRegionPosTra	 = 	0.0
 ucScanRegionPosValid	 = 	0x1
 lPtabAbsStartPosZ	 = 	0
 bPtabAbsStartPosZValid	 = 	0x0
@@ -604,7 +604,7 @@ sMds.sMdsPreScanNormalize.ucMode	 = 	2
 sMds.sMdsPreScanNormalize.ucStackMode	 = 	4
 sMds.sMdsPreScanNormalize.lNPELin	 = 	18
 sAAInitialOffset.Laterality	 = 	0
-sAAInitialOffset.SliceInformation.sPosition.dTra	 = 	-999.0
+sAAInitialOffset.SliceInformation.sPosition.dTra	 = 	0.0
 sAAInitialOffset.SliceInformation.sNormal.dTra	 = 	1.0
 alRepetitionsDelayTimeMs.__attribute__.size	 = 	64
 adFlipAngleDegree.__attribute__.size	 = 	32

@@ -3,18 +3,19 @@
 
 ## Short description
 
-This package contains a tfl based sequence developed on IDEA VE12U software
-version using a custom ICE reconstruction for B1+ mapping. The sequence has been
-developed to run on 8 or 16 channel multi-transmit Terra systems as well as on single transmit system. An ICE post-processing performs the slice profile correction for an optimized B1+ measurement.
+This package contains a tfl based sequence using a custom ICE reconstruction for B1+ mapping. The sequence has been developed to run on 8 or 16 channel multi-transmit Terra systems as well as on single transmit system. An ICE post-processing performs the slice profile correction for an optimized B1+ measurement.
 
 ## Information
 
-- Softawre versions: VE12U, XA60
+- Software versions: VE12U, XA60
 
 - Accessing the package: either using the Siemens C2P platform (https://webclient.eu.api.teamplay.siemens.com/#/c2p) or using a classic Siemens C2P paperwork.
 
 - For a detailed description of the package, see the [ns_tfl_rfmap package documentation](https://github.com/FranckMauconduit/MRI-packages-siemens/blob/main/ns_tfl_rfmap-package/ns_tfl_rfmap_documentation.pdf)
 
+## Protocols
+
+A list of suggested protocols is available [here](https://github.com/FranckMauconduit/MRI-packages-siemens/blob/main/ns_tfl_rfmap-package/protocols/)
 
 ## Related articles
 

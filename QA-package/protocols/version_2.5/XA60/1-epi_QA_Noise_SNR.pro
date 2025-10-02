@@ -1,7 +1,192 @@
-### ASCCONV BEGIN object=MrProtDataImpl@MrProtocolData version=63010001 converter=%MEASCONST%/ConverterList/Prot_Converter.txt ###
-ulVersion	 = 	63010001
+<XProtocol> 
+{
+  <ID> 1000001 
+  <Userversion> 666.0 
+  
+  <ParamMap.""> 
+  {
+    <ParamMap."DMWL"> 
+    {
+      
+      <ParamMap."Pause"> 
+      {
+        
+        <ParamString."CodeValue">  { }
+        <ParamString."CodingSchemeVersion">  { }
+        <ParamString."CodingSchemeDesignator">  { }
+        <ParamString."CodeMeaning">  { }
+      }
+      <ParamMap."Meas"> 
+      {
+        
+        <ParamString."CodeValue">  { }
+        <ParamString."CodingSchemeVersion">  { }
+        <ParamString."CodingSchemeDesignator">  { }
+        <ParamString."CodeMeaning">  { }
+      }
+    }
+    <ParamMap."MultiStep"> 
+    {
+      
+      <ParamBool."IsMultistep">  { }
+      <ParamArray."SubStep"> 
+      {
+        <Default> <ParamLong.""> 
+        {
+        }
+        { 1  }
+        
+      }
+      <ParamBool."SaveNonnormalizedImages">  { "true"  }
+      <ParamBool."IsInlineCompose">  { }
+      <ParamLong."ComposingGroup">  { 1  }
+      <ParamBool."IsLastStep">  { }
+      <ParamChoice."ComposingFunction">  { <Limit> { "Angio" "Spine" "Adaptive" "Diffusion" } "Angio"  }
+      <ParamChoice."ComposingNormalize">  { <Limit> { "Off" "Weak" "Medium" "Strong" } "Off"  }
+      <ParamString."SeriesDescription">  { }
+      <ParamLong."2DDistCor">  { }
+      <ParamLong."DynDistCor">  { }
+      <ParamLong."ScanAtCenterDummy">  { }
+    }
+    <ParamMap."OpenRecon"> 
+    {
+      
+      <ParamString."OpenReconAlgorithm">  { }
+      <ParamArray."Parameters"> 
+      {
+        <Default> <ParamMap.""> 
+        {
+          
+          <ParamString."Id"> 
+          {
+          }
+          
+          <ParamString."ParameterValue"> 
+          {
+          }
+        }
+        { }
+        { }
+        { }
+        { }
+        { }
+        { }
+        { }
+        { }
+        { }
+        { }
+        { }
+        { }
+        { }
+        { }
+        
+      }
+    }
+    <ParamMap."Properties"> 
+    {
+      
+      <ParamMap."Reconstruction"> 
+      {
+        
+        <ParamBool."recon_prio">  { }
+      }
+      <ParamMap."Sound"> 
+      {
+        
+        <ParamString."PreSound">  { }
+        <ParamString."PostSound">  { }
+      }
+      <ParamMap."AutoLoad"> 
+      {
+        
+        <ParamBool."DisableAutoTransfer">  { }
+        <ParamBool."AutoStore">  { "true"  }
+        <ParamBool."LoadToFilming">  { "true"  }
+        <ParamBool."LoadToViewer">  { "true"  }
+        <ParamBool."LoadToStamp">  { }
+        <ParamBool."LoadToGraphic">  { }
+        <ParamChoice."GraphicSegmentChoice">  { <Limit> { "Default" "1st segment" "2nd segment" "3rd segment" "All segments" } "Default"  }
+        <ParamBool."InlineMovie">  { }
+        <ParamBool."AutoOpenInlineDisplay">  { }
+        <ParamBool."AutoCloseInlineDisplay">  { }
+        <ParamBool."InlinePositionDisplay">  { }
+        <ParamChoice."InlinePositionDisplayOrientation">  { <Limit> { "All orientations" "Sag" "Cor" "Tra" } "All orientations"  }
+      }
+      <ParamMap."SlicePositioning"> 
+      {
+        
+        <ParamBool."AutoAlignSpine">  { }
+      }
+      <ParamMap."Queue"> 
+      {
+        
+        <ParamChoice."CoilSelectMode">  { <Limit> { "Default" "Auto Coil Select Off" "Auto Coil Select On" "Auto Coil Select No Spine" "Auto Coil Select Restricted" "Coil Memory Off" "Coil Memory On" "All Off" } "Auto Coil Select On"  }
+        <ParamArray."CoilCompartments"> 
+        {
+          <Default> <ParamBool.""> 
+          {
+            <Visible> "true" 
+            <Limit> { "true" "false" }
+          }
+          { }
+          { }
+          { }
+          { }
+          { }
+          { }
+          { }
+          { }
+          { }
+          { }
+          { }
+          { }
+          { }
+          { }
+          { }
+          { }
+          { }
+          { }
+          { }
+          { }
+          { }
+          
+        }
+        <ParamBool."WorkingMan">  { "true"  }
+        <ParamBool."WaitForUserToStart">  { }
+        <ParamChoice."WaitForStartChoice">  { <Limit> { "Single measurement" "Repeated measurement" } "Single measurement"  }
+        <ParamString."Description">  { }
+        <ParamString."ProtocolName">  { "Initialized by sequence"  }
+      }
+    }
+  }
+}
+
+<XProtocol> 
+{
+  
+  <ParamMap.""> 
+  {
+    <ParamMap."Common"> 
+    {
+      
+      <ParamBool."DisableVoiceCommands">  { }
+      <ParamBool."IsRadialSliceSortingActive">  { }
+      <ParamBool."ConfidenceRescaling">  { }
+    }
+    <ParamMap."ConflictSolving"> 
+    {
+      
+      <ParamLong."ConflictSolvingMode">  { }
+      <ParamDouble."MaxTr">  { }
+      <ParamDouble."MinFlipAngle">  { }
+    }
+  }
+}
+
+### ASCCONV BEGIN object=MrProtDataImpl@MrProtocolData version=66010002 converter=%MEASCONST%/ConverterList/Prot_Converter.txt ###
+ulVersion	 = 	66010002
 tSequenceFileName	 = 	"%CustomerSeq%\ns_qa_ep2d_fid"
-tProtocolName	 = 	"QA_Stability_no_reco"
+tProtocolName	 = 	"Initialized by sequence"
 lScanRegionPosTra	 = 	0.0
 ucScanRegionPosValid	 = 	0x1
 lPtabAbsStartPosZ	 = 	0
@@ -14,16 +199,17 @@ ucAAMode	 = 	1
 ucAARegionMode	 = 	1
 ucAARefMode	 = 	1
 ucReconstructionMode	 = 	1
+ucUncombImages	 = 	0x1
 ucOneSeriesForAllMeas	 = 	1
 ucPHAPSMode	 = 	1
 ulWrapUpMagn	 = 	1
 lAverages	 = 	1
 dAveragesDouble	 = 	1.0
-lRepetitions	 = 	199
-lScanTimeSec	 = 	2
-lTotalScanTimeSec	 = 	404
-dRefSNR	 = 	205165.48199
-dRefSNR_VOI	 = 	205165.48199
+lRepetitions	 = 	1
+lScanTimeSec	 = 	5
+lTotalScanTimeSec	 = 	10
+dRefSNR	 = 	231704.750059
+dRefSNR_VOI	 = 	231704.750059
 ulMotionCorr	 = 	1
 ucCineMode	 = 	1
 ucSequenceType	 = 	4
@@ -43,7 +229,7 @@ ulReaquisitionMode	 = 	1
 lDummyScans	 = 	0
 ucExternalTriggerSignal	 = 	0x0
 lSilentPeriod	 = 	0
-dOverallImageScaleFactor	 = 	0.338512396694
+dOverallImageScaleFactor	 = 	0.25
 dOverallImageScaleCorrectionFactor	 = 	1.0
 dAutoCoilSelectIlluRangeScale	 = 	0.699999988079
 SarOptimization	 = 	0
@@ -56,6 +242,7 @@ ucUnfilteredImagesForDenoiseUniform	 = 	0x0
 lDenoiseWeight	 = 	1
 sInversionContrastCombination	 = 	1
 ucMotionCorSAMEROrig	 = 	0x1
+sProtConsistencyInfo.flNominalB0	 = 	6.98093605042
 sGRADSPEC.ucMode	 = 	1
 sGRADSPEC.ucNoiseReduction	 = 	1
 sGRADSPEC.asGPAData.__attribute__.size	 = 	1
@@ -86,7 +273,7 @@ sGRADSPEC.asGPAData[0].sCrossTermCompensationZY.aflTimeConstant.__attribute__.si
 sGRADSPEC.alShimCurrent.__attribute__.size	 = 	15
 sTXSPEC.lBCExcitationMode	 = 	0
 sTXSPEC.lBCSeqExcitationMode	 = 	4
-sTXSPEC.ucRFPulseType	 = 	2
+sTXSPEC.ucRFPulseType	 = 	1
 sTXSPEC.ucExcitMode	 = 	32
 sTXSPEC.ucSimultaneousExcitation	 = 	1
 sTXSPEC.lB1ShimMode	 = 	1
@@ -126,11 +313,11 @@ sRXSPEC.asNucleusInfo[0].lCoilSelectIndex	 = 	-1
 sRXSPEC.asNucleusInfo[1].lCoilSelectIndex	 = 	-1
 sRXSPEC.alVariCapVoltages.__attribute__.size	 = 	4
 sRXSPEC.alDwellTime.__attribute__.size	 = 	256
-sRXSPEC.alDwellTime[0]	 = 	4600
+sRXSPEC.alDwellTime[0]	 = 	1600
 sRXSPEC.asLocalShimData.__attribute__.size	 = 	8
 sAdjData.uiAdjFreMode	 = 	1
 sAdjData.uiAdjTraMode	 = 	1
-sAdjData.uiAdjShimMode	 = 	2
+sAdjData.uiAdjShimMode	 = 	1
 sAdjData.uiAdjWatSupMode	 = 	1
 sAdjData.uiAdjRFMapMode	 = 	1
 sAdjData.uiAdjMDSMode	 = 	1
@@ -148,268 +335,34 @@ sAdjData.uiLRBalancing	 = 	0
 sAdjData.sAdjUIOverrides.iAdjUIFieldMapMode	 = 	-1
 sAdjData.sAdjUIOverrides.iAdjUITraMode	 = 	-1
 alTR.__attribute__.size	 = 	256
-alTR[0]	 = 	2000000
+alTR[0]	 = 	5000000
 alTI.__attribute__.size	 = 	256
 alTD.__attribute__.size	 = 	256
 alTE.__attribute__.size	 = 	256
-alTE[0]	 = 	26000
+alTE[0]	 = 	8800
 acFlowComp.__attribute__.size	 = 	256
 acFlowComp[0]	 = 	1
-sSliceArray.lSize	 = 	27
+sSliceArray.lSize	 = 	1
 sSliceArray.lConc	 = 	1
 sSliceArray.ucMode	 = 	4
 sSliceArray.ucAnatomicalSliceMode	 = 	4
 sSliceArray.ucConcatenationsSelectModeResp	 = 	1
 sSliceArray.asSlice.__attribute__.size	 = 	256
 sSliceArray.asSlice[0].dThickness	 = 	4.0
-sSliceArray.asSlice[0].dPhaseFOV	 = 	220.0
-sSliceArray.asSlice[0].dReadoutFOV	 = 	220.0
-sSliceArray.asSlice[0].sPosition.dTra	 = 	-65.0
+sSliceArray.asSlice[0].dPhaseFOV	 = 	256.0
+sSliceArray.asSlice[0].dReadoutFOV	 = 	256.0
 sSliceArray.asSlice[0].sNormal.dTra	 = 	1.0
-sSliceArray.asSlice[1].dThickness	 = 	4.0
-sSliceArray.asSlice[1].dPhaseFOV	 = 	220.0
-sSliceArray.asSlice[1].dReadoutFOV	 = 	220.0
-sSliceArray.asSlice[1].sPosition.dTra	 = 	-60.0
-sSliceArray.asSlice[1].sNormal.dTra	 = 	1.0
-sSliceArray.asSlice[2].dThickness	 = 	4.0
-sSliceArray.asSlice[2].dPhaseFOV	 = 	220.0
-sSliceArray.asSlice[2].dReadoutFOV	 = 	220.0
-sSliceArray.asSlice[2].sPosition.dTra	 = 	-55.0
-sSliceArray.asSlice[2].sNormal.dTra	 = 	1.0
-sSliceArray.asSlice[3].dThickness	 = 	4.0
-sSliceArray.asSlice[3].dPhaseFOV	 = 	220.0
-sSliceArray.asSlice[3].dReadoutFOV	 = 	220.0
-sSliceArray.asSlice[3].sPosition.dTra	 = 	-50.0
-sSliceArray.asSlice[3].sNormal.dTra	 = 	1.0
-sSliceArray.asSlice[4].dThickness	 = 	4.0
-sSliceArray.asSlice[4].dPhaseFOV	 = 	220.0
-sSliceArray.asSlice[4].dReadoutFOV	 = 	220.0
-sSliceArray.asSlice[4].sPosition.dTra	 = 	-45.0
-sSliceArray.asSlice[4].sNormal.dTra	 = 	1.0
-sSliceArray.asSlice[5].dThickness	 = 	4.0
-sSliceArray.asSlice[5].dPhaseFOV	 = 	220.0
-sSliceArray.asSlice[5].dReadoutFOV	 = 	220.0
-sSliceArray.asSlice[5].sPosition.dTra	 = 	-40.0
-sSliceArray.asSlice[5].sNormal.dTra	 = 	1.0
-sSliceArray.asSlice[6].dThickness	 = 	4.0
-sSliceArray.asSlice[6].dPhaseFOV	 = 	220.0
-sSliceArray.asSlice[6].dReadoutFOV	 = 	220.0
-sSliceArray.asSlice[6].sPosition.dTra	 = 	-35.0
-sSliceArray.asSlice[6].sNormal.dTra	 = 	1.0
-sSliceArray.asSlice[7].dThickness	 = 	4.0
-sSliceArray.asSlice[7].dPhaseFOV	 = 	220.0
-sSliceArray.asSlice[7].dReadoutFOV	 = 	220.0
-sSliceArray.asSlice[7].sPosition.dTra	 = 	-30.0
-sSliceArray.asSlice[7].sNormal.dTra	 = 	1.0
-sSliceArray.asSlice[8].dThickness	 = 	4.0
-sSliceArray.asSlice[8].dPhaseFOV	 = 	220.0
-sSliceArray.asSlice[8].dReadoutFOV	 = 	220.0
-sSliceArray.asSlice[8].sPosition.dTra	 = 	-25.0
-sSliceArray.asSlice[8].sNormal.dTra	 = 	1.0
-sSliceArray.asSlice[9].dThickness	 = 	4.0
-sSliceArray.asSlice[9].dPhaseFOV	 = 	220.0
-sSliceArray.asSlice[9].dReadoutFOV	 = 	220.0
-sSliceArray.asSlice[9].sPosition.dTra	 = 	-20.0
-sSliceArray.asSlice[9].sNormal.dTra	 = 	1.0
-sSliceArray.asSlice[10].dThickness	 = 	4.0
-sSliceArray.asSlice[10].dPhaseFOV	 = 	220.0
-sSliceArray.asSlice[10].dReadoutFOV	 = 	220.0
-sSliceArray.asSlice[10].sPosition.dTra	 = 	-15.0
-sSliceArray.asSlice[10].sNormal.dTra	 = 	1.0
-sSliceArray.asSlice[11].dThickness	 = 	4.0
-sSliceArray.asSlice[11].dPhaseFOV	 = 	220.0
-sSliceArray.asSlice[11].dReadoutFOV	 = 	220.0
-sSliceArray.asSlice[11].sPosition.dTra	 = 	-10.0
-sSliceArray.asSlice[11].sNormal.dTra	 = 	1.0
-sSliceArray.asSlice[12].dThickness	 = 	4.0
-sSliceArray.asSlice[12].dPhaseFOV	 = 	220.0
-sSliceArray.asSlice[12].dReadoutFOV	 = 	220.0
-sSliceArray.asSlice[12].sPosition.dTra	 = 	-5.0
-sSliceArray.asSlice[12].sNormal.dTra	 = 	1.0
-sSliceArray.asSlice[13].dThickness	 = 	4.0
-sSliceArray.asSlice[13].dPhaseFOV	 = 	220.0
-sSliceArray.asSlice[13].dReadoutFOV	 = 	220.0
-sSliceArray.asSlice[13].sNormal.dTra	 = 	1.0
-sSliceArray.asSlice[14].dThickness	 = 	4.0
-sSliceArray.asSlice[14].dPhaseFOV	 = 	220.0
-sSliceArray.asSlice[14].dReadoutFOV	 = 	220.0
-sSliceArray.asSlice[14].sPosition.dTra	 = 	5.0
-sSliceArray.asSlice[14].sNormal.dTra	 = 	1.0
-sSliceArray.asSlice[15].dThickness	 = 	4.0
-sSliceArray.asSlice[15].dPhaseFOV	 = 	220.0
-sSliceArray.asSlice[15].dReadoutFOV	 = 	220.0
-sSliceArray.asSlice[15].sPosition.dTra	 = 	10.0
-sSliceArray.asSlice[15].sNormal.dTra	 = 	1.0
-sSliceArray.asSlice[16].dThickness	 = 	4.0
-sSliceArray.asSlice[16].dPhaseFOV	 = 	220.0
-sSliceArray.asSlice[16].dReadoutFOV	 = 	220.0
-sSliceArray.asSlice[16].sPosition.dTra	 = 	15.0
-sSliceArray.asSlice[16].sNormal.dTra	 = 	1.0
-sSliceArray.asSlice[17].dThickness	 = 	4.0
-sSliceArray.asSlice[17].dPhaseFOV	 = 	220.0
-sSliceArray.asSlice[17].dReadoutFOV	 = 	220.0
-sSliceArray.asSlice[17].sPosition.dTra	 = 	20.0
-sSliceArray.asSlice[17].sNormal.dTra	 = 	1.0
-sSliceArray.asSlice[18].dThickness	 = 	4.0
-sSliceArray.asSlice[18].dPhaseFOV	 = 	220.0
-sSliceArray.asSlice[18].dReadoutFOV	 = 	220.0
-sSliceArray.asSlice[18].sPosition.dTra	 = 	25.0
-sSliceArray.asSlice[18].sNormal.dTra	 = 	1.0
-sSliceArray.asSlice[19].dThickness	 = 	4.0
-sSliceArray.asSlice[19].dPhaseFOV	 = 	220.0
-sSliceArray.asSlice[19].dReadoutFOV	 = 	220.0
-sSliceArray.asSlice[19].sPosition.dTra	 = 	30.0
-sSliceArray.asSlice[19].sNormal.dTra	 = 	1.0
-sSliceArray.asSlice[20].dThickness	 = 	4.0
-sSliceArray.asSlice[20].dPhaseFOV	 = 	220.0
-sSliceArray.asSlice[20].dReadoutFOV	 = 	220.0
-sSliceArray.asSlice[20].sPosition.dTra	 = 	35.0
-sSliceArray.asSlice[20].sNormal.dTra	 = 	1.0
-sSliceArray.asSlice[21].dThickness	 = 	4.0
-sSliceArray.asSlice[21].dPhaseFOV	 = 	220.0
-sSliceArray.asSlice[21].dReadoutFOV	 = 	220.0
-sSliceArray.asSlice[21].sPosition.dTra	 = 	40.0
-sSliceArray.asSlice[21].sNormal.dTra	 = 	1.0
-sSliceArray.asSlice[22].dThickness	 = 	4.0
-sSliceArray.asSlice[22].dPhaseFOV	 = 	220.0
-sSliceArray.asSlice[22].dReadoutFOV	 = 	220.0
-sSliceArray.asSlice[22].sPosition.dTra	 = 	45.0
-sSliceArray.asSlice[22].sNormal.dTra	 = 	1.0
-sSliceArray.asSlice[23].dThickness	 = 	4.0
-sSliceArray.asSlice[23].dPhaseFOV	 = 	220.0
-sSliceArray.asSlice[23].dReadoutFOV	 = 	220.0
-sSliceArray.asSlice[23].sPosition.dTra	 = 	50.0
-sSliceArray.asSlice[23].sNormal.dTra	 = 	1.0
-sSliceArray.asSlice[24].dThickness	 = 	4.0
-sSliceArray.asSlice[24].dPhaseFOV	 = 	220.0
-sSliceArray.asSlice[24].dReadoutFOV	 = 	220.0
-sSliceArray.asSlice[24].sPosition.dTra	 = 	55.0
-sSliceArray.asSlice[24].sNormal.dTra	 = 	1.0
-sSliceArray.asSlice[25].dThickness	 = 	4.0
-sSliceArray.asSlice[25].dPhaseFOV	 = 	220.0
-sSliceArray.asSlice[25].dReadoutFOV	 = 	220.0
-sSliceArray.asSlice[25].sPosition.dTra	 = 	60.0
-sSliceArray.asSlice[25].sNormal.dTra	 = 	1.0
-sSliceArray.asSlice[26].dThickness	 = 	4.0
-sSliceArray.asSlice[26].dPhaseFOV	 = 	220.0
-sSliceArray.asSlice[26].dReadoutFOV	 = 	220.0
-sSliceArray.asSlice[26].sPosition.dTra	 = 	65.0
-sSliceArray.asSlice[26].sNormal.dTra	 = 	1.0
 sSliceArray.alSliceAcqOrder.__attribute__.size	 = 	256
-sSliceArray.alSliceAcqOrder[1]	 = 	1
-sSliceArray.alSliceAcqOrder[2]	 = 	2
-sSliceArray.alSliceAcqOrder[3]	 = 	3
-sSliceArray.alSliceAcqOrder[4]	 = 	4
-sSliceArray.alSliceAcqOrder[5]	 = 	5
-sSliceArray.alSliceAcqOrder[6]	 = 	6
-sSliceArray.alSliceAcqOrder[7]	 = 	7
-sSliceArray.alSliceAcqOrder[8]	 = 	8
-sSliceArray.alSliceAcqOrder[9]	 = 	9
-sSliceArray.alSliceAcqOrder[10]	 = 	10
-sSliceArray.alSliceAcqOrder[11]	 = 	11
-sSliceArray.alSliceAcqOrder[12]	 = 	12
-sSliceArray.alSliceAcqOrder[13]	 = 	13
-sSliceArray.alSliceAcqOrder[14]	 = 	14
-sSliceArray.alSliceAcqOrder[15]	 = 	15
-sSliceArray.alSliceAcqOrder[16]	 = 	16
-sSliceArray.alSliceAcqOrder[17]	 = 	17
-sSliceArray.alSliceAcqOrder[18]	 = 	18
-sSliceArray.alSliceAcqOrder[19]	 = 	19
-sSliceArray.alSliceAcqOrder[20]	 = 	20
-sSliceArray.alSliceAcqOrder[21]	 = 	21
-sSliceArray.alSliceAcqOrder[22]	 = 	22
-sSliceArray.alSliceAcqOrder[23]	 = 	23
-sSliceArray.alSliceAcqOrder[24]	 = 	24
-sSliceArray.alSliceAcqOrder[25]	 = 	25
-sSliceArray.alSliceAcqOrder[26]	 = 	26
 sSliceArray.anAsc.__attribute__.size	 = 	256
-sSliceArray.anAsc[1]	 = 	1
-sSliceArray.anAsc[2]	 = 	2
-sSliceArray.anAsc[3]	 = 	3
-sSliceArray.anAsc[4]	 = 	4
-sSliceArray.anAsc[5]	 = 	5
-sSliceArray.anAsc[6]	 = 	6
-sSliceArray.anAsc[7]	 = 	7
-sSliceArray.anAsc[8]	 = 	8
-sSliceArray.anAsc[9]	 = 	9
-sSliceArray.anAsc[10]	 = 	10
-sSliceArray.anAsc[11]	 = 	11
-sSliceArray.anAsc[12]	 = 	12
-sSliceArray.anAsc[13]	 = 	13
-sSliceArray.anAsc[14]	 = 	14
-sSliceArray.anAsc[15]	 = 	15
-sSliceArray.anAsc[16]	 = 	16
-sSliceArray.anAsc[17]	 = 	17
-sSliceArray.anAsc[18]	 = 	18
-sSliceArray.anAsc[19]	 = 	19
-sSliceArray.anAsc[20]	 = 	20
-sSliceArray.anAsc[21]	 = 	21
-sSliceArray.anAsc[22]	 = 	22
-sSliceArray.anAsc[23]	 = 	23
-sSliceArray.anAsc[24]	 = 	24
-sSliceArray.anAsc[25]	 = 	25
-sSliceArray.anAsc[26]	 = 	26
 sSliceArray.anPos.__attribute__.size	 = 	256
-sSliceArray.anPos[1]	 = 	1
-sSliceArray.anPos[2]	 = 	2
-sSliceArray.anPos[3]	 = 	3
-sSliceArray.anPos[4]	 = 	4
-sSliceArray.anPos[5]	 = 	5
-sSliceArray.anPos[6]	 = 	6
-sSliceArray.anPos[7]	 = 	7
-sSliceArray.anPos[8]	 = 	8
-sSliceArray.anPos[9]	 = 	9
-sSliceArray.anPos[10]	 = 	10
-sSliceArray.anPos[11]	 = 	11
-sSliceArray.anPos[12]	 = 	12
-sSliceArray.anPos[13]	 = 	13
-sSliceArray.anPos[14]	 = 	14
-sSliceArray.anPos[15]	 = 	15
-sSliceArray.anPos[16]	 = 	16
-sSliceArray.anPos[17]	 = 	17
-sSliceArray.anPos[18]	 = 	18
-sSliceArray.anPos[19]	 = 	19
-sSliceArray.anPos[20]	 = 	20
-sSliceArray.anPos[21]	 = 	21
-sSliceArray.anPos[22]	 = 	22
-sSliceArray.anPos[23]	 = 	23
-sSliceArray.anPos[24]	 = 	24
-sSliceArray.anPos[25]	 = 	25
-sSliceArray.anPos[26]	 = 	26
 sSliceArray.sTSat.dThickness	 = 	50.0
 sSliceArray.sTSat.ulShape	 = 	1
 sGroupArray.lSize	 = 	1
 sGroupArray.asGroup.__attribute__.size	 = 	256
-sGroupArray.asGroup[0].nSize	 = 	27
-sGroupArray.asGroup[0].dDistFact	 = 	0.25
+sGroupArray.asGroup[0].nSize	 = 	1
+sGroupArray.asGroup[0].dDistFact	 = 	0.5
 sGroupArray.anMember.__attribute__.size	 = 	258
-sGroupArray.anMember[1]	 = 	1
-sGroupArray.anMember[2]	 = 	2
-sGroupArray.anMember[3]	 = 	3
-sGroupArray.anMember[4]	 = 	4
-sGroupArray.anMember[5]	 = 	5
-sGroupArray.anMember[6]	 = 	6
-sGroupArray.anMember[7]	 = 	7
-sGroupArray.anMember[8]	 = 	8
-sGroupArray.anMember[9]	 = 	9
-sGroupArray.anMember[10]	 = 	10
-sGroupArray.anMember[11]	 = 	11
-sGroupArray.anMember[12]	 = 	12
-sGroupArray.anMember[13]	 = 	13
-sGroupArray.anMember[14]	 = 	14
-sGroupArray.anMember[15]	 = 	15
-sGroupArray.anMember[16]	 = 	16
-sGroupArray.anMember[17]	 = 	17
-sGroupArray.anMember[18]	 = 	18
-sGroupArray.anMember[19]	 = 	19
-sGroupArray.anMember[20]	 = 	20
-sGroupArray.anMember[21]	 = 	21
-sGroupArray.anMember[22]	 = 	22
-sGroupArray.anMember[23]	 = 	23
-sGroupArray.anMember[24]	 = 	24
-sGroupArray.anMember[25]	 = 	25
-sGroupArray.anMember[26]	 = 	26
-sGroupArray.anMember[27]	 = 	-1
+sGroupArray.anMember[1]	 = 	-1
 sGroupArray.sPSat.dThickness	 = 	50.0
 sGroupArray.sPSat.dGap	 = 	10.0
 sGroupArray.sPSat.ulShape	 = 	1
@@ -456,16 +409,16 @@ sPrepPulses.ucBloodSuppression	 = 	1
 sPrepPulses.lPhaseCorrectionMode	 = 	1
 sPrepPulses.ucIRScheme	 = 	1
 sPrepPulses.lFatSupOpt	 = 	1
-sPrepPulses.lFatWaterContrast	 = 	4
+sPrepPulses.lFatWaterContrast	 = 	1
 sPrepPulses.adT2PrepDuration.__attribute__.size	 = 	1
 sPrepPulses.adT2PrepDuration[0]	 = 	40.0
-sKSpace.dPhaseResolution	 = 	1.0
+sKSpace.dPhaseResolution	 = 	0.5
 sKSpace.dSliceResolution	 = 	1.0
 sKSpace.dAngioDynCentralRegionA	 = 	20.0
 sKSpace.dAngioDynSamplingDensityB	 = 	25.0
 sKSpace.dSeqPhasePartialFourierForSNR	 = 	1.0
 sKSpace.lBaseResolution	 = 	64
-sKSpace.lPhaseEncodingLines	 = 	64
+sKSpace.lPhaseEncodingLines	 = 	32
 sKSpace.lPartitions	 = 	64
 sKSpace.lImagesPerSlab	 = 	64
 sKSpace.lRadialViews	 = 	64
@@ -550,7 +503,6 @@ sSpecPara.lNOEType	 = 	1
 sSpecPara.lExcitationType	 = 	1
 sSpecPara.lSpecAppl	 = 	1
 sSpecPara.lSpectralSuppression	 = 	1
-sSpecPara.sVoI.sPosition.dTra	 = 	1998.0
 sDiffusion.ulMode	 = 	1
 sDiffusion.dsScheme	 = 	1
 sDiffusion.ulQSpaceCoverage	 = 	1
@@ -610,7 +562,7 @@ sAAInitialOffset.Laterality	 = 	0
 sAAInitialOffset.SliceInformation.sNormal.dTra	 = 	1.0
 alRepetitionsDelayTimeMs.__attribute__.size	 = 	64
 adFlipAngleDegree.__attribute__.size	 = 	32
-adFlipAngleDegree[0]	 = 	90.0
+adFlipAngleDegree[0]	 = 	80.0
 aulServicePara.__attribute__.size	 = 	5
 uiPerProxy2Skip.__attribute__.size	 = 	2
 sCoilSelectMeas.sCoilContext	 = 	"InvalidContext"
@@ -649,7 +601,7 @@ sCoilSelectMeas.CoilPlugs.Plug[8].IdPart.__attribute__.size	 = 	8
 sCoilSelectMeas.CoilPlugs.Plug[9].IdPart.__attribute__.size	 = 	8
 sCoilSelectMeas.CoilPlugs.Plug[10].IdPart.__attribute__.size	 = 	8
 sWipMemBlock.alFree.__attribute__.size	 = 	64
-sWipMemBlock.alFree[3]	 = 	1
+sWipMemBlock.alFree[3]	 = 	4
 sWipMemBlock.alFree[4]	 = 	1
 sWipMemBlock.alFree[63]	 = 	12345
 sWipMemBlock.adFree.__attribute__.size	 = 	16

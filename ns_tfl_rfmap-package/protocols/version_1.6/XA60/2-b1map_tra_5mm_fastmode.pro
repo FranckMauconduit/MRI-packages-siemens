@@ -1,12 +1,291 @@
-### ASCCONV BEGIN object=MrProtDataImpl@MrProtocolData version=63010001 converter=%MEASCONST%/ConverterList/Prot_Converter.txt ###
-ulVersion	 = 	63010001
-tSequenceFileName	 = 	"%CustomerSeq%\ns_qa_ep2d_fid"
-tProtocolName	 = 	"QA_Stability_no_reco"
+<XProtocol> 
+{
+  <ID> 1000001 
+  <Userversion> 666.0 
+  
+  <ParamMap.""> 
+  {
+    <ParamMap."DMWL"> 
+    {
+      
+      <ParamMap."Pause"> 
+      {
+        
+        <ParamString."CodeValue">  { }
+        <ParamString."CodingSchemeVersion">  { }
+        <ParamString."CodingSchemeDesignator">  { }
+        <ParamString."CodeMeaning">  { }
+      }
+      <ParamMap."Meas"> 
+      {
+        
+        <ParamString."CodeValue">  { }
+        <ParamString."CodingSchemeVersion">  { }
+        <ParamString."CodingSchemeDesignator">  { }
+        <ParamString."CodeMeaning">  { }
+      }
+    }
+    <ParamMap."MultiStep"> 
+    {
+      
+      <ParamBool."IsMultistep">  { }
+      <ParamArray."SubStep"> 
+      {
+        <Default> <ParamLong.""> 
+        {
+        }
+        { 1  }
+        
+      }
+      <ParamBool."SaveNonnormalizedImages">  { "true"  }
+      <ParamBool."IsInlineCompose">  { }
+      <ParamLong."ComposingGroup">  { 1  }
+      <ParamBool."IsLastStep">  { }
+      <ParamChoice."ComposingFunction">  { <Limit> { "Angio" "Spine" "Adaptive" "Diffusion" } "Angio"  }
+      <ParamChoice."ComposingNormalize">  { <Limit> { "Off" "Weak" "Medium" "Strong" } "Off"  }
+      <ParamString."SeriesDescription">  { }
+      <ParamLong."2DDistCor">  { }
+      <ParamLong."DynDistCor">  { }
+      <ParamLong."ScanAtCenterDummy">  { }
+    }
+    <ParamMap."OpenRecon"> 
+    {
+      
+      <ParamString."OpenReconAlgorithm">  { }
+      <ParamArray."Parameters"> 
+      {
+        <Default> <ParamMap.""> 
+        {
+          
+          <ParamString."Id"> 
+          {
+          }
+          
+          <ParamString."ParameterValue"> 
+          {
+          }
+        }
+        { }
+        { }
+        { }
+        { }
+        { }
+        { }
+        { }
+        { }
+        { }
+        { }
+        { }
+        { }
+        { }
+        { }
+        
+      }
+    }
+    <ParamMap."Properties"> 
+    {
+      
+      <ParamMap."Reconstruction"> 
+      {
+        
+        <ParamBool."recon_prio">  { }
+      }
+      <ParamMap."Sound"> 
+      {
+        
+        <ParamString."PreSound">  { }
+        <ParamString."PostSound">  { }
+      }
+      <ParamMap."AutoLoad"> 
+      {
+        
+        <ParamBool."DisableAutoTransfer">  { }
+        <ParamBool."AutoStore">  { "true"  }
+        <ParamBool."LoadToFilming">  { "true"  }
+        <ParamBool."LoadToViewer">  { "true"  }
+        <ParamBool."LoadToStamp">  { }
+        <ParamBool."LoadToGraphic">  { }
+        <ParamChoice."GraphicSegmentChoice">  { <Limit> { "Default" "1st segment" "2nd segment" "3rd segment" "All segments" } "Default"  }
+        <ParamBool."InlineMovie">  { }
+        <ParamBool."AutoOpenInlineDisplay">  { }
+        <ParamBool."AutoCloseInlineDisplay">  { }
+        <ParamBool."InlinePositionDisplay">  { }
+        <ParamChoice."InlinePositionDisplayOrientation">  { <Limit> { "All orientations" "Sag" "Cor" "Tra" } "All orientations"  }
+      }
+      <ParamMap."SlicePositioning"> 
+      {
+        
+        <ParamBool."AutoAlignSpine">  { }
+      }
+      <ParamMap."Queue"> 
+      {
+        
+        <ParamChoice."CoilSelectMode">  { <Limit> { "Default" "Auto Coil Select Off" "Auto Coil Select On" "Auto Coil Select No Spine" "Auto Coil Select Restricted" "Coil Memory Off" "Coil Memory On" "All Off" } "Auto Coil Select On"  }
+        <ParamArray."CoilCompartments"> 
+        {
+          <Default> <ParamBool.""> 
+          {
+            <Visible> "true" 
+            <Limit> { "true" "false" }
+          }
+          { }
+          { }
+          { }
+          { }
+          { }
+          { }
+          { }
+          { }
+          { }
+          { }
+          { }
+          { }
+          { }
+          { }
+          { }
+          { }
+          { }
+          { }
+          { }
+          { }
+          { }
+          
+        }
+        <ParamBool."WorkingMan">  { "true"  }
+        <ParamBool."WaitForUserToStart">  { }
+        <ParamChoice."WaitForStartChoice">  { <Limit> { "Single measurement" "Repeated measurement" } "Single measurement"  }
+        <ParamString."Description">  { }
+        <ParamString."ProtocolName">  { "Initialized by sequence"  }
+      }
+    }
+  }
+}
+
+<XProtocol> 
+{
+  <ID> 50 
+  <Userversion> 4.5 
+  
+  <ParamMap.""> 
+  {
+    <ParamMap."Common"> 
+    {
+      
+      <ParamBool."DisableVoiceCommands">  { }
+      <ParamBool."IsRadialSliceSortingActive">  { }
+      <ParamBool."ConfidenceRescaling">  { }
+    }
+    <ParamMap."ConflictSolving"> 
+    {
+      
+      <ParamLong."ConflictSolvingMode">  { }
+      <ParamDouble."MaxTr">  { }
+      <ParamDouble."MinFlipAngle">  { }
+    }
+    <PipeService."EVA"> 
+    {
+      <Class> "PipeLinkService@MrParcPipe" 
+      
+      <ParamLong."POOLTHREADS">  { 1  }
+      <ParamString."GROUP">  { "Calculation"  }
+      <ParamLong."DATATHREADS">  { }
+      <ParamLong."WATERMARK">  { }
+      <ParamString."tdefaultEVAProt">  { "%SiemensEvaDefProt%/Inline/Inline.evp"  }
+      <ParamFunctor."MotionCorr"> 
+      {
+        <Class> "MotionCorrDecorator@IceImagePostProcFunctors" 
+        
+        <ParamBool."EXECUTE">  { }
+        <ParamString."image_type">  { "M"  }
+        <ParamBool."save">  { }
+        <Method."ComputeImage">  { "uint64_t" "class IceAs &" "class MrPtr<class MiniHeader> &" "class ImageControl &"  }
+        <Event."ImageReady">  { "uint64_t" "class IceAs &" "class MrPtr<class MiniHeader> &" "class ImageControl &"  }
+        <Connection."c1">  { "ImageReady" "" "ComputeImage"  }
+      }
+      <ParamFunctor."Subtraction"> 
+      {
+        <Class> "Subtraction@IceImagePostProcFunctors" 
+        
+        <ParamBool."EXECUTE">  { }
+        <ParamString."image_type">  { "M"  }
+        <ParamBool."save">  { "true"  }
+        <ParamLong."subtrahend">  { 1  }
+        <ParamString."string_indices">  { }
+        <ParamBool."indices">  { "true"  }
+        <ParamLong."subtraction_group">  { 1  }
+        <ParamChoice."subtraction_mode">  { <Limit> { "SubtractionModeChoiceStandard" "SubtractionModeChoiceAbsolute" } "SubtractionModeChoiceStandard"  }
+        <ParamBool."auto">  { }
+        <ParamLong."fact">  { 1  }
+        <ParamLong."offs">  { }
+        <ParamString."BolusAgent">  { }
+        <ParamBool."save_orig">  { "true"  }
+        <Method."ComputeImage">  { "uint64_t" "class IceAs &" "class MrPtr<class MiniHeader> &" "class ImageControl &"  }
+        <Event."ImageReady">  { "uint64_t" "class IceAs &" "class MrPtr<class MiniHeader> &" "class ImageControl &"  }
+        <Connection."c1">  { "ImageReady" "" "ComputeImage"  }
+      }
+      <ParamFunctor."StdDevFactory"> 
+      {
+        <Class> "StdDevFactory@IceImagePostProcFunctors" 
+        
+        <ParamBool."EXECUTE">  { }
+        <ParamString."image_type">  { "M"  }
+        <ParamBool."sag">  { }
+        <ParamBool."cor">  { }
+        <ParamBool."tra">  { }
+        <ParamBool."time">  { }
+        <ParamBool."save_orig">  { "true"  }
+        <ParamBool."stddev">  { }
+        <Method."ComputeImage">  { "uint64_t" "class IceAs &" "class MrPtr<class MiniHeader> &" "class ImageControl &"  }
+        <Event."ImageReady">  { "uint64_t" "class IceAs &" "class MrPtr<class MiniHeader> &" "class ImageControl &"  }
+        <Connection."c1">  { "ImageReady" "" "ComputeImage"  }
+      }
+      <ParamFunctor."MIPFactory"> 
+      {
+        <Class> "MIPFactory@IceImagePostProcFunctors" 
+        
+        <ParamBool."EXECUTE">  { }
+        <ParamString."image_type">  { "M"  }
+        <ParamBool."sag">  { }
+        <ParamBool."cor">  { }
+        <ParamBool."tra">  { }
+        <ParamBool."time">  { }
+        <ParamBool."radial">  { }
+        <ParamLong."no_radial_views">  { 1  }
+        <ParamChoice."axis_radial_views">  { <Limit> { "L-R" "A-P" "H-F" } "L-R"  }
+        <ParamBool."save_orig">  { "true"  }
+        <Method."ComputeImage">  { "uint64_t" "class IceAs &" "class MrPtr<class MiniHeader> &" "class ImageControl &"  }
+        <Event."ImageReady">  { "uint64_t" "class IceAs &" "class MrPtr<class MiniHeader> &" "class ImageControl &"  }
+        <Connection."c1">  { "ImageReady" "" "ComputeImage"  }
+      }
+      <ParamFunctor."MPRFactory"> 
+      {
+        <Class> "MPRFactory" 
+        
+        <ParamBool."EXECUTE">  { }
+        <ParamString."image_type">  { "M"  }
+        <ParamBool."sag">  { }
+        <ParamBool."cor">  { }
+        <ParamBool."tra">  { }
+        <ParamLong."no_slices">  { 1  }
+        <ParamBool."save_orig">  { "true"  }
+        <Method."ComputeImage">  { "uint64_t" "class IceAs &" "class MrPtr<class MiniHeader> &" "class ImageControl &"  }
+        <Event."ImageReady">  { "uint64_t" "class IceAs &" "class MrPtr<class MiniHeader> &" "class ImageControl &"  }
+        <Connection."c1">  { "ImageReady" "" "ComputeImage"  }
+      }
+      <ParamBool."save_orig">  { "true"  }
+    }
+  }
+}
+
+### ASCCONV BEGIN object=MrProtDataImpl@MrProtocolData version=66010002 converter=%MEASCONST%/ConverterList/Prot_Converter.txt ###
+ulVersion	 = 	66010002
+tSequenceFileName	 = 	"%CustomerSeq%\ns_tfl_rfmap"
+tProtocolName	 = 	"Initialized by sequence"
+tdefaultEVAProt	 = 	"%SiemensEvaDefProt%\Inline\Inline.evp"
 lScanRegionPosTra	 = 	0.0
 ucScanRegionPosValid	 = 	0x1
 lPtabAbsStartPosZ	 = 	0
 bPtabAbsStartPosZValid	 = 	0x0
-ucEnableNoiseAdjust	 = 	1
 lContrasts	 = 	1
 lCombinedEchoes	 = 	1
 ucDisableChangeStoreImages	 = 	0x1
@@ -14,19 +293,18 @@ ucAAMode	 = 	1
 ucAARegionMode	 = 	1
 ucAARefMode	 = 	1
 ucReconstructionMode	 = 	1
-ucOneSeriesForAllMeas	 = 	1
+ucOneSeriesForAllMeas	 = 	4
 ucPHAPSMode	 = 	1
 ulWrapUpMagn	 = 	1
 lAverages	 = 	1
 dAveragesDouble	 = 	1.0
-lRepetitions	 = 	199
-lScanTimeSec	 = 	2
-lTotalScanTimeSec	 = 	404
-dRefSNR	 = 	205165.48199
-dRefSNR_VOI	 = 	205165.48199
+lScanTimeSec	 = 	100
+lTotalScanTimeSec	 = 	100
+dRefSNR	 = 	279284.800875
+dRefSNR_VOI	 = 	279284.800875
 ulMotionCorr	 = 	1
 ucCineMode	 = 	1
-ucSequenceType	 = 	4
+ucSequenceType	 = 	1
 ucCoilCombineMode	 = 	1
 ucFlipAngleMode	 = 	1
 lTOM	 = 	1
@@ -40,10 +318,11 @@ dTissueT1	 = 	10.0
 dTissueT2	 = 	5.0
 lInvContrasts	 = 	1
 ulReaquisitionMode	 = 	1
+SequenceClass	 = 	5
 lDummyScans	 = 	0
 ucExternalTriggerSignal	 = 	0x0
 lSilentPeriod	 = 	0
-dOverallImageScaleFactor	 = 	0.338512396694
+dOverallImageScaleFactor	 = 	0.4096
 dOverallImageScaleCorrectionFactor	 = 	1.0
 dAutoCoilSelectIlluRangeScale	 = 	0.699999988079
 SarOptimization	 = 	0
@@ -53,9 +332,10 @@ ucEddyCurrentComp	 = 	0x0
 ucStaticFieldCorrection	 = 	0x0
 ucDenoiseUniform	 = 	0x0
 ucUnfilteredImagesForDenoiseUniform	 = 	0x0
-lDenoiseWeight	 = 	1
+lDenoiseWeight	 = 	40
 sInversionContrastCombination	 = 	1
 ucMotionCorSAMEROrig	 = 	0x1
+sProtConsistencyInfo.flNominalB0	 = 	6.98093605042
 sGRADSPEC.ucMode	 = 	1
 sGRADSPEC.ucNoiseReduction	 = 	1
 sGRADSPEC.asGPAData.__attribute__.size	 = 	1
@@ -87,12 +367,13 @@ sGRADSPEC.alShimCurrent.__attribute__.size	 = 	15
 sTXSPEC.lBCExcitationMode	 = 	0
 sTXSPEC.lBCSeqExcitationMode	 = 	4
 sTXSPEC.ucRFPulseType	 = 	2
-sTXSPEC.ucExcitMode	 = 	32
+sTXSPEC.ucExcitMode	 = 	1
 sTXSPEC.ucSimultaneousExcitation	 = 	1
 sTXSPEC.lB1ShimMode	 = 	1
 sTXSPEC.asNucleusInfo.__attribute__.size	 = 	2
 sTXSPEC.asNucleusInfo[0].tNucleus	 = 	"1H"
 sTXSPEC.asNucleusInfo[0].lCoilSelectIndex	 = 	-1
+sTXSPEC.asNucleusInfo[0].RFPulseExcitationMode	 = 	2
 sTXSPEC.asNucleusInfo[0].CompProtectionValues.MaxOnlineTxAmpl.__attribute__.size	 = 	8
 sTXSPEC.asNucleusInfo[0].CompProtectionValues.WorstCaseMaxOnlineTxAmpl.__attribute__.size	 = 	8
 sTXSPEC.asNucleusInfo[0].CompProtectionValues.adGainVariationAvg.__attribute__.size	 = 	8
@@ -126,175 +407,347 @@ sRXSPEC.asNucleusInfo[0].lCoilSelectIndex	 = 	-1
 sRXSPEC.asNucleusInfo[1].lCoilSelectIndex	 = 	-1
 sRXSPEC.alVariCapVoltages.__attribute__.size	 = 	4
 sRXSPEC.alDwellTime.__attribute__.size	 = 	256
-sRXSPEC.alDwellTime[0]	 = 	4600
+sRXSPEC.alDwellTime[0]	 = 	7800
+sRXSPEC.alDwellTime[1]	 = 	15900
+sRXSPEC.alDwellTime[2]	 = 	15900
+sRXSPEC.alDwellTime[3]	 = 	15900
+sRXSPEC.alDwellTime[4]	 = 	15900
+sRXSPEC.alDwellTime[5]	 = 	15900
+sRXSPEC.alDwellTime[6]	 = 	15900
+sRXSPEC.alDwellTime[7]	 = 	15900
+sRXSPEC.alDwellTime[8]	 = 	15900
+sRXSPEC.alDwellTime[9]	 = 	15900
+sRXSPEC.alDwellTime[10]	 = 	15900
+sRXSPEC.alDwellTime[11]	 = 	15900
+sRXSPEC.alDwellTime[12]	 = 	15900
+sRXSPEC.alDwellTime[13]	 = 	15900
+sRXSPEC.alDwellTime[14]	 = 	15900
+sRXSPEC.alDwellTime[15]	 = 	15900
+sRXSPEC.alDwellTime[16]	 = 	15900
+sRXSPEC.alDwellTime[17]	 = 	15900
+sRXSPEC.alDwellTime[18]	 = 	15900
+sRXSPEC.alDwellTime[19]	 = 	15900
+sRXSPEC.alDwellTime[20]	 = 	15900
+sRXSPEC.alDwellTime[21]	 = 	15900
+sRXSPEC.alDwellTime[22]	 = 	15900
+sRXSPEC.alDwellTime[23]	 = 	15900
+sRXSPEC.alDwellTime[24]	 = 	15900
+sRXSPEC.alDwellTime[25]	 = 	15900
+sRXSPEC.alDwellTime[26]	 = 	15900
+sRXSPEC.alDwellTime[27]	 = 	15900
+sRXSPEC.alDwellTime[28]	 = 	15900
+sRXSPEC.alDwellTime[29]	 = 	15900
+sRXSPEC.alDwellTime[30]	 = 	15900
+sRXSPEC.alDwellTime[31]	 = 	15900
 sRXSPEC.asLocalShimData.__attribute__.size	 = 	8
 sAdjData.uiAdjFreMode	 = 	1
 sAdjData.uiAdjTraMode	 = 	1
-sAdjData.uiAdjShimMode	 = 	2
+sAdjData.uiAdjShimMode	 = 	512
 sAdjData.uiAdjWatSupMode	 = 	1
 sAdjData.uiAdjRFMapMode	 = 	1
 sAdjData.uiAdjMDSMode	 = 	1
 sAdjData.uiAdjTableTolerance	 = 	2
-sAdjData.uiAdjFreProtRelated	 = 	0x1
 sAdjData.lCoupleAdjVolTo	 = 	1
 sAdjData.uiAdjB0AcqMode	 = 	1
 sAdjData.uiAdjB1AcqMode	 = 	1
 sAdjData.uiAdjFreqConfirmSpec	 = 	1
 sAdjData.uiAdjustmentMode	 = 	1
 sAdjData.uiFastViewOptimization	 = 	1
+sAdjData.uiAdjSliceBySliceTxRef	 = 	0x1
+sAdjData.uiAdjSliceBySliceFrequency	 = 	0x1
+sAdjData.uiAdjSliceBySliceFirstOrderShim	 = 	0x1
 sAdjData.bAdjustWithBreathhold	 = 	0x0
 sAdjData.uiLocalShim	 = 	0
 sAdjData.uiLRBalancing	 = 	0
 sAdjData.sAdjUIOverrides.iAdjUIFieldMapMode	 = 	-1
 sAdjData.sAdjUIOverrides.iAdjUITraMode	 = 	-1
 alTR.__attribute__.size	 = 	256
-alTR[0]	 = 	2000000
+alTR[0]	 = 	10000000
 alTI.__attribute__.size	 = 	256
+alTI[0]	 = 	300000
+alTI[1]	 = 	1000000
 alTD.__attribute__.size	 = 	256
 alTE.__attribute__.size	 = 	256
-alTE[0]	 = 	26000
+alTE[0]	 = 	1720
+alTE[1]	 = 	10000
+alTE[2]	 = 	15000
+alTE[3]	 = 	20000
+alTE[4]	 = 	25000
+alTE[5]	 = 	30000
+alTE[6]	 = 	35000
+alTE[7]	 = 	40000
+alTE[8]	 = 	45000
+alTE[9]	 = 	50000
+alTE[10]	 = 	55000
+alTE[11]	 = 	60000
+alTE[12]	 = 	65000
+alTE[13]	 = 	70000
+alTE[14]	 = 	75000
+alTE[15]	 = 	80000
+alTE[16]	 = 	85000
+alTE[17]	 = 	90000
+alTE[18]	 = 	95000
+alTE[19]	 = 	100000
+alTE[20]	 = 	105000
+alTE[21]	 = 	110000
+alTE[22]	 = 	115000
+alTE[23]	 = 	120000
+alTE[24]	 = 	125000
+alTE[25]	 = 	130000
+alTE[26]	 = 	135000
+alTE[27]	 = 	140000
+alTE[28]	 = 	145000
+alTE[29]	 = 	150000
+alTE[30]	 = 	155000
+alTE[31]	 = 	160000
 acFlowComp.__attribute__.size	 = 	256
 acFlowComp[0]	 = 	1
-sSliceArray.lSize	 = 	27
+sSliceArray.lSize	 = 	40
 sSliceArray.lConc	 = 	1
 sSliceArray.ucMode	 = 	4
 sSliceArray.ucAnatomicalSliceMode	 = 	4
 sSliceArray.ucConcatenationsSelectModeResp	 = 	1
 sSliceArray.asSlice.__attribute__.size	 = 	256
-sSliceArray.asSlice[0].dThickness	 = 	4.0
-sSliceArray.asSlice[0].dPhaseFOV	 = 	220.0
-sSliceArray.asSlice[0].dReadoutFOV	 = 	220.0
-sSliceArray.asSlice[0].sPosition.dTra	 = 	-65.0
+sSliceArray.asSlice[0].dThickness	 = 	2.5
+sSliceArray.asSlice[0].dPhaseFOV	 = 	200.0
+sSliceArray.asSlice[0].dReadoutFOV	 = 	320.0
+sSliceArray.asSlice[0].dInPlaneRot	 = 	1.57079632679
+sSliceArray.asSlice[0].sPosition.dTra	 = 	-97.5
 sSliceArray.asSlice[0].sNormal.dTra	 = 	1.0
-sSliceArray.asSlice[1].dThickness	 = 	4.0
-sSliceArray.asSlice[1].dPhaseFOV	 = 	220.0
-sSliceArray.asSlice[1].dReadoutFOV	 = 	220.0
-sSliceArray.asSlice[1].sPosition.dTra	 = 	-60.0
+sSliceArray.asSlice[1].dThickness	 = 	2.5
+sSliceArray.asSlice[1].dPhaseFOV	 = 	200.0
+sSliceArray.asSlice[1].dReadoutFOV	 = 	320.0
+sSliceArray.asSlice[1].dInPlaneRot	 = 	1.57079632679
+sSliceArray.asSlice[1].sPosition.dTra	 = 	-92.5
 sSliceArray.asSlice[1].sNormal.dTra	 = 	1.0
-sSliceArray.asSlice[2].dThickness	 = 	4.0
-sSliceArray.asSlice[2].dPhaseFOV	 = 	220.0
-sSliceArray.asSlice[2].dReadoutFOV	 = 	220.0
-sSliceArray.asSlice[2].sPosition.dTra	 = 	-55.0
+sSliceArray.asSlice[2].dThickness	 = 	2.5
+sSliceArray.asSlice[2].dPhaseFOV	 = 	200.0
+sSliceArray.asSlice[2].dReadoutFOV	 = 	320.0
+sSliceArray.asSlice[2].dInPlaneRot	 = 	1.57079632679
+sSliceArray.asSlice[2].sPosition.dTra	 = 	-87.5
 sSliceArray.asSlice[2].sNormal.dTra	 = 	1.0
-sSliceArray.asSlice[3].dThickness	 = 	4.0
-sSliceArray.asSlice[3].dPhaseFOV	 = 	220.0
-sSliceArray.asSlice[3].dReadoutFOV	 = 	220.0
-sSliceArray.asSlice[3].sPosition.dTra	 = 	-50.0
+sSliceArray.asSlice[3].dThickness	 = 	2.5
+sSliceArray.asSlice[3].dPhaseFOV	 = 	200.0
+sSliceArray.asSlice[3].dReadoutFOV	 = 	320.0
+sSliceArray.asSlice[3].dInPlaneRot	 = 	1.57079632679
+sSliceArray.asSlice[3].sPosition.dTra	 = 	-82.5
 sSliceArray.asSlice[3].sNormal.dTra	 = 	1.0
-sSliceArray.asSlice[4].dThickness	 = 	4.0
-sSliceArray.asSlice[4].dPhaseFOV	 = 	220.0
-sSliceArray.asSlice[4].dReadoutFOV	 = 	220.0
-sSliceArray.asSlice[4].sPosition.dTra	 = 	-45.0
+sSliceArray.asSlice[4].dThickness	 = 	2.5
+sSliceArray.asSlice[4].dPhaseFOV	 = 	200.0
+sSliceArray.asSlice[4].dReadoutFOV	 = 	320.0
+sSliceArray.asSlice[4].dInPlaneRot	 = 	1.57079632679
+sSliceArray.asSlice[4].sPosition.dTra	 = 	-77.5
 sSliceArray.asSlice[4].sNormal.dTra	 = 	1.0
-sSliceArray.asSlice[5].dThickness	 = 	4.0
-sSliceArray.asSlice[5].dPhaseFOV	 = 	220.0
-sSliceArray.asSlice[5].dReadoutFOV	 = 	220.0
-sSliceArray.asSlice[5].sPosition.dTra	 = 	-40.0
+sSliceArray.asSlice[5].dThickness	 = 	2.5
+sSliceArray.asSlice[5].dPhaseFOV	 = 	200.0
+sSliceArray.asSlice[5].dReadoutFOV	 = 	320.0
+sSliceArray.asSlice[5].dInPlaneRot	 = 	1.57079632679
+sSliceArray.asSlice[5].sPosition.dTra	 = 	-72.5
 sSliceArray.asSlice[5].sNormal.dTra	 = 	1.0
-sSliceArray.asSlice[6].dThickness	 = 	4.0
-sSliceArray.asSlice[6].dPhaseFOV	 = 	220.0
-sSliceArray.asSlice[6].dReadoutFOV	 = 	220.0
-sSliceArray.asSlice[6].sPosition.dTra	 = 	-35.0
+sSliceArray.asSlice[6].dThickness	 = 	2.5
+sSliceArray.asSlice[6].dPhaseFOV	 = 	200.0
+sSliceArray.asSlice[6].dReadoutFOV	 = 	320.0
+sSliceArray.asSlice[6].dInPlaneRot	 = 	1.57079632679
+sSliceArray.asSlice[6].sPosition.dTra	 = 	-67.5
 sSliceArray.asSlice[6].sNormal.dTra	 = 	1.0
-sSliceArray.asSlice[7].dThickness	 = 	4.0
-sSliceArray.asSlice[7].dPhaseFOV	 = 	220.0
-sSliceArray.asSlice[7].dReadoutFOV	 = 	220.0
-sSliceArray.asSlice[7].sPosition.dTra	 = 	-30.0
+sSliceArray.asSlice[7].dThickness	 = 	2.5
+sSliceArray.asSlice[7].dPhaseFOV	 = 	200.0
+sSliceArray.asSlice[7].dReadoutFOV	 = 	320.0
+sSliceArray.asSlice[7].dInPlaneRot	 = 	1.57079632679
+sSliceArray.asSlice[7].sPosition.dTra	 = 	-62.5
 sSliceArray.asSlice[7].sNormal.dTra	 = 	1.0
-sSliceArray.asSlice[8].dThickness	 = 	4.0
-sSliceArray.asSlice[8].dPhaseFOV	 = 	220.0
-sSliceArray.asSlice[8].dReadoutFOV	 = 	220.0
-sSliceArray.asSlice[8].sPosition.dTra	 = 	-25.0
+sSliceArray.asSlice[8].dThickness	 = 	2.5
+sSliceArray.asSlice[8].dPhaseFOV	 = 	200.0
+sSliceArray.asSlice[8].dReadoutFOV	 = 	320.0
+sSliceArray.asSlice[8].dInPlaneRot	 = 	1.57079632679
+sSliceArray.asSlice[8].sPosition.dTra	 = 	-57.5
 sSliceArray.asSlice[8].sNormal.dTra	 = 	1.0
-sSliceArray.asSlice[9].dThickness	 = 	4.0
-sSliceArray.asSlice[9].dPhaseFOV	 = 	220.0
-sSliceArray.asSlice[9].dReadoutFOV	 = 	220.0
-sSliceArray.asSlice[9].sPosition.dTra	 = 	-20.0
+sSliceArray.asSlice[9].dThickness	 = 	2.5
+sSliceArray.asSlice[9].dPhaseFOV	 = 	200.0
+sSliceArray.asSlice[9].dReadoutFOV	 = 	320.0
+sSliceArray.asSlice[9].dInPlaneRot	 = 	1.57079632679
+sSliceArray.asSlice[9].sPosition.dTra	 = 	-52.5
 sSliceArray.asSlice[9].sNormal.dTra	 = 	1.0
-sSliceArray.asSlice[10].dThickness	 = 	4.0
-sSliceArray.asSlice[10].dPhaseFOV	 = 	220.0
-sSliceArray.asSlice[10].dReadoutFOV	 = 	220.0
-sSliceArray.asSlice[10].sPosition.dTra	 = 	-15.0
+sSliceArray.asSlice[10].dThickness	 = 	2.5
+sSliceArray.asSlice[10].dPhaseFOV	 = 	200.0
+sSliceArray.asSlice[10].dReadoutFOV	 = 	320.0
+sSliceArray.asSlice[10].dInPlaneRot	 = 	1.57079632679
+sSliceArray.asSlice[10].sPosition.dTra	 = 	-47.5
 sSliceArray.asSlice[10].sNormal.dTra	 = 	1.0
-sSliceArray.asSlice[11].dThickness	 = 	4.0
-sSliceArray.asSlice[11].dPhaseFOV	 = 	220.0
-sSliceArray.asSlice[11].dReadoutFOV	 = 	220.0
-sSliceArray.asSlice[11].sPosition.dTra	 = 	-10.0
+sSliceArray.asSlice[11].dThickness	 = 	2.5
+sSliceArray.asSlice[11].dPhaseFOV	 = 	200.0
+sSliceArray.asSlice[11].dReadoutFOV	 = 	320.0
+sSliceArray.asSlice[11].dInPlaneRot	 = 	1.57079632679
+sSliceArray.asSlice[11].sPosition.dTra	 = 	-42.5
 sSliceArray.asSlice[11].sNormal.dTra	 = 	1.0
-sSliceArray.asSlice[12].dThickness	 = 	4.0
-sSliceArray.asSlice[12].dPhaseFOV	 = 	220.0
-sSliceArray.asSlice[12].dReadoutFOV	 = 	220.0
-sSliceArray.asSlice[12].sPosition.dTra	 = 	-5.0
+sSliceArray.asSlice[12].dThickness	 = 	2.5
+sSliceArray.asSlice[12].dPhaseFOV	 = 	200.0
+sSliceArray.asSlice[12].dReadoutFOV	 = 	320.0
+sSliceArray.asSlice[12].dInPlaneRot	 = 	1.57079632679
+sSliceArray.asSlice[12].sPosition.dTra	 = 	-37.5
 sSliceArray.asSlice[12].sNormal.dTra	 = 	1.0
-sSliceArray.asSlice[13].dThickness	 = 	4.0
-sSliceArray.asSlice[13].dPhaseFOV	 = 	220.0
-sSliceArray.asSlice[13].dReadoutFOV	 = 	220.0
+sSliceArray.asSlice[13].dThickness	 = 	2.5
+sSliceArray.asSlice[13].dPhaseFOV	 = 	200.0
+sSliceArray.asSlice[13].dReadoutFOV	 = 	320.0
+sSliceArray.asSlice[13].dInPlaneRot	 = 	1.57079632679
+sSliceArray.asSlice[13].sPosition.dTra	 = 	-32.5
 sSliceArray.asSlice[13].sNormal.dTra	 = 	1.0
-sSliceArray.asSlice[14].dThickness	 = 	4.0
-sSliceArray.asSlice[14].dPhaseFOV	 = 	220.0
-sSliceArray.asSlice[14].dReadoutFOV	 = 	220.0
-sSliceArray.asSlice[14].sPosition.dTra	 = 	5.0
+sSliceArray.asSlice[14].dThickness	 = 	2.5
+sSliceArray.asSlice[14].dPhaseFOV	 = 	200.0
+sSliceArray.asSlice[14].dReadoutFOV	 = 	320.0
+sSliceArray.asSlice[14].dInPlaneRot	 = 	1.57079632679
+sSliceArray.asSlice[14].sPosition.dTra	 = 	-27.5
 sSliceArray.asSlice[14].sNormal.dTra	 = 	1.0
-sSliceArray.asSlice[15].dThickness	 = 	4.0
-sSliceArray.asSlice[15].dPhaseFOV	 = 	220.0
-sSliceArray.asSlice[15].dReadoutFOV	 = 	220.0
-sSliceArray.asSlice[15].sPosition.dTra	 = 	10.0
+sSliceArray.asSlice[15].dThickness	 = 	2.5
+sSliceArray.asSlice[15].dPhaseFOV	 = 	200.0
+sSliceArray.asSlice[15].dReadoutFOV	 = 	320.0
+sSliceArray.asSlice[15].dInPlaneRot	 = 	1.57079632679
+sSliceArray.asSlice[15].sPosition.dTra	 = 	-22.5
 sSliceArray.asSlice[15].sNormal.dTra	 = 	1.0
-sSliceArray.asSlice[16].dThickness	 = 	4.0
-sSliceArray.asSlice[16].dPhaseFOV	 = 	220.0
-sSliceArray.asSlice[16].dReadoutFOV	 = 	220.0
-sSliceArray.asSlice[16].sPosition.dTra	 = 	15.0
+sSliceArray.asSlice[16].dThickness	 = 	2.5
+sSliceArray.asSlice[16].dPhaseFOV	 = 	200.0
+sSliceArray.asSlice[16].dReadoutFOV	 = 	320.0
+sSliceArray.asSlice[16].dInPlaneRot	 = 	1.57079632679
+sSliceArray.asSlice[16].sPosition.dTra	 = 	-17.5
 sSliceArray.asSlice[16].sNormal.dTra	 = 	1.0
-sSliceArray.asSlice[17].dThickness	 = 	4.0
-sSliceArray.asSlice[17].dPhaseFOV	 = 	220.0
-sSliceArray.asSlice[17].dReadoutFOV	 = 	220.0
-sSliceArray.asSlice[17].sPosition.dTra	 = 	20.0
+sSliceArray.asSlice[17].dThickness	 = 	2.5
+sSliceArray.asSlice[17].dPhaseFOV	 = 	200.0
+sSliceArray.asSlice[17].dReadoutFOV	 = 	320.0
+sSliceArray.asSlice[17].dInPlaneRot	 = 	1.57079632679
+sSliceArray.asSlice[17].sPosition.dTra	 = 	-12.5
 sSliceArray.asSlice[17].sNormal.dTra	 = 	1.0
-sSliceArray.asSlice[18].dThickness	 = 	4.0
-sSliceArray.asSlice[18].dPhaseFOV	 = 	220.0
-sSliceArray.asSlice[18].dReadoutFOV	 = 	220.0
-sSliceArray.asSlice[18].sPosition.dTra	 = 	25.0
+sSliceArray.asSlice[18].dThickness	 = 	2.5
+sSliceArray.asSlice[18].dPhaseFOV	 = 	200.0
+sSliceArray.asSlice[18].dReadoutFOV	 = 	320.0
+sSliceArray.asSlice[18].dInPlaneRot	 = 	1.57079632679
+sSliceArray.asSlice[18].sPosition.dTra	 = 	-7.5
 sSliceArray.asSlice[18].sNormal.dTra	 = 	1.0
-sSliceArray.asSlice[19].dThickness	 = 	4.0
-sSliceArray.asSlice[19].dPhaseFOV	 = 	220.0
-sSliceArray.asSlice[19].dReadoutFOV	 = 	220.0
-sSliceArray.asSlice[19].sPosition.dTra	 = 	30.0
+sSliceArray.asSlice[19].dThickness	 = 	2.5
+sSliceArray.asSlice[19].dPhaseFOV	 = 	200.0
+sSliceArray.asSlice[19].dReadoutFOV	 = 	320.0
+sSliceArray.asSlice[19].dInPlaneRot	 = 	1.57079632679
+sSliceArray.asSlice[19].sPosition.dTra	 = 	-2.5
 sSliceArray.asSlice[19].sNormal.dTra	 = 	1.0
-sSliceArray.asSlice[20].dThickness	 = 	4.0
-sSliceArray.asSlice[20].dPhaseFOV	 = 	220.0
-sSliceArray.asSlice[20].dReadoutFOV	 = 	220.0
-sSliceArray.asSlice[20].sPosition.dTra	 = 	35.0
+sSliceArray.asSlice[20].dThickness	 = 	2.5
+sSliceArray.asSlice[20].dPhaseFOV	 = 	200.0
+sSliceArray.asSlice[20].dReadoutFOV	 = 	320.0
+sSliceArray.asSlice[20].dInPlaneRot	 = 	1.57079632679
+sSliceArray.asSlice[20].sPosition.dTra	 = 	2.5
 sSliceArray.asSlice[20].sNormal.dTra	 = 	1.0
-sSliceArray.asSlice[21].dThickness	 = 	4.0
-sSliceArray.asSlice[21].dPhaseFOV	 = 	220.0
-sSliceArray.asSlice[21].dReadoutFOV	 = 	220.0
-sSliceArray.asSlice[21].sPosition.dTra	 = 	40.0
+sSliceArray.asSlice[21].dThickness	 = 	2.5
+sSliceArray.asSlice[21].dPhaseFOV	 = 	200.0
+sSliceArray.asSlice[21].dReadoutFOV	 = 	320.0
+sSliceArray.asSlice[21].dInPlaneRot	 = 	1.57079632679
+sSliceArray.asSlice[21].sPosition.dTra	 = 	7.5
 sSliceArray.asSlice[21].sNormal.dTra	 = 	1.0
-sSliceArray.asSlice[22].dThickness	 = 	4.0
-sSliceArray.asSlice[22].dPhaseFOV	 = 	220.0
-sSliceArray.asSlice[22].dReadoutFOV	 = 	220.0
-sSliceArray.asSlice[22].sPosition.dTra	 = 	45.0
+sSliceArray.asSlice[22].dThickness	 = 	2.5
+sSliceArray.asSlice[22].dPhaseFOV	 = 	200.0
+sSliceArray.asSlice[22].dReadoutFOV	 = 	320.0
+sSliceArray.asSlice[22].dInPlaneRot	 = 	1.57079632679
+sSliceArray.asSlice[22].sPosition.dTra	 = 	12.5
 sSliceArray.asSlice[22].sNormal.dTra	 = 	1.0
-sSliceArray.asSlice[23].dThickness	 = 	4.0
-sSliceArray.asSlice[23].dPhaseFOV	 = 	220.0
-sSliceArray.asSlice[23].dReadoutFOV	 = 	220.0
-sSliceArray.asSlice[23].sPosition.dTra	 = 	50.0
+sSliceArray.asSlice[23].dThickness	 = 	2.5
+sSliceArray.asSlice[23].dPhaseFOV	 = 	200.0
+sSliceArray.asSlice[23].dReadoutFOV	 = 	320.0
+sSliceArray.asSlice[23].dInPlaneRot	 = 	1.57079632679
+sSliceArray.asSlice[23].sPosition.dTra	 = 	17.5
 sSliceArray.asSlice[23].sNormal.dTra	 = 	1.0
-sSliceArray.asSlice[24].dThickness	 = 	4.0
-sSliceArray.asSlice[24].dPhaseFOV	 = 	220.0
-sSliceArray.asSlice[24].dReadoutFOV	 = 	220.0
-sSliceArray.asSlice[24].sPosition.dTra	 = 	55.0
+sSliceArray.asSlice[24].dThickness	 = 	2.5
+sSliceArray.asSlice[24].dPhaseFOV	 = 	200.0
+sSliceArray.asSlice[24].dReadoutFOV	 = 	320.0
+sSliceArray.asSlice[24].dInPlaneRot	 = 	1.57079632679
+sSliceArray.asSlice[24].sPosition.dTra	 = 	22.5
 sSliceArray.asSlice[24].sNormal.dTra	 = 	1.0
-sSliceArray.asSlice[25].dThickness	 = 	4.0
-sSliceArray.asSlice[25].dPhaseFOV	 = 	220.0
-sSliceArray.asSlice[25].dReadoutFOV	 = 	220.0
-sSliceArray.asSlice[25].sPosition.dTra	 = 	60.0
+sSliceArray.asSlice[25].dThickness	 = 	2.5
+sSliceArray.asSlice[25].dPhaseFOV	 = 	200.0
+sSliceArray.asSlice[25].dReadoutFOV	 = 	320.0
+sSliceArray.asSlice[25].dInPlaneRot	 = 	1.57079632679
+sSliceArray.asSlice[25].sPosition.dTra	 = 	27.5
 sSliceArray.asSlice[25].sNormal.dTra	 = 	1.0
-sSliceArray.asSlice[26].dThickness	 = 	4.0
-sSliceArray.asSlice[26].dPhaseFOV	 = 	220.0
-sSliceArray.asSlice[26].dReadoutFOV	 = 	220.0
-sSliceArray.asSlice[26].sPosition.dTra	 = 	65.0
+sSliceArray.asSlice[26].dThickness	 = 	2.5
+sSliceArray.asSlice[26].dPhaseFOV	 = 	200.0
+sSliceArray.asSlice[26].dReadoutFOV	 = 	320.0
+sSliceArray.asSlice[26].dInPlaneRot	 = 	1.57079632679
+sSliceArray.asSlice[26].sPosition.dTra	 = 	32.5
 sSliceArray.asSlice[26].sNormal.dTra	 = 	1.0
+sSliceArray.asSlice[27].dThickness	 = 	2.5
+sSliceArray.asSlice[27].dPhaseFOV	 = 	200.0
+sSliceArray.asSlice[27].dReadoutFOV	 = 	320.0
+sSliceArray.asSlice[27].dInPlaneRot	 = 	1.57079632679
+sSliceArray.asSlice[27].sPosition.dTra	 = 	37.5
+sSliceArray.asSlice[27].sNormal.dTra	 = 	1.0
+sSliceArray.asSlice[28].dThickness	 = 	2.5
+sSliceArray.asSlice[28].dPhaseFOV	 = 	200.0
+sSliceArray.asSlice[28].dReadoutFOV	 = 	320.0
+sSliceArray.asSlice[28].dInPlaneRot	 = 	1.57079632679
+sSliceArray.asSlice[28].sPosition.dTra	 = 	42.5
+sSliceArray.asSlice[28].sNormal.dTra	 = 	1.0
+sSliceArray.asSlice[29].dThickness	 = 	2.5
+sSliceArray.asSlice[29].dPhaseFOV	 = 	200.0
+sSliceArray.asSlice[29].dReadoutFOV	 = 	320.0
+sSliceArray.asSlice[29].dInPlaneRot	 = 	1.57079632679
+sSliceArray.asSlice[29].sPosition.dTra	 = 	47.5
+sSliceArray.asSlice[29].sNormal.dTra	 = 	1.0
+sSliceArray.asSlice[30].dThickness	 = 	2.5
+sSliceArray.asSlice[30].dPhaseFOV	 = 	200.0
+sSliceArray.asSlice[30].dReadoutFOV	 = 	320.0
+sSliceArray.asSlice[30].dInPlaneRot	 = 	1.57079632679
+sSliceArray.asSlice[30].sPosition.dTra	 = 	52.5
+sSliceArray.asSlice[30].sNormal.dTra	 = 	1.0
+sSliceArray.asSlice[31].dThickness	 = 	2.5
+sSliceArray.asSlice[31].dPhaseFOV	 = 	200.0
+sSliceArray.asSlice[31].dReadoutFOV	 = 	320.0
+sSliceArray.asSlice[31].dInPlaneRot	 = 	1.57079632679
+sSliceArray.asSlice[31].sPosition.dTra	 = 	57.5
+sSliceArray.asSlice[31].sNormal.dTra	 = 	1.0
+sSliceArray.asSlice[32].dThickness	 = 	2.5
+sSliceArray.asSlice[32].dPhaseFOV	 = 	200.0
+sSliceArray.asSlice[32].dReadoutFOV	 = 	320.0
+sSliceArray.asSlice[32].dInPlaneRot	 = 	1.57079632679
+sSliceArray.asSlice[32].sPosition.dTra	 = 	62.5
+sSliceArray.asSlice[32].sNormal.dTra	 = 	1.0
+sSliceArray.asSlice[33].dThickness	 = 	2.5
+sSliceArray.asSlice[33].dPhaseFOV	 = 	200.0
+sSliceArray.asSlice[33].dReadoutFOV	 = 	320.0
+sSliceArray.asSlice[33].dInPlaneRot	 = 	1.57079632679
+sSliceArray.asSlice[33].sPosition.dTra	 = 	67.5
+sSliceArray.asSlice[33].sNormal.dTra	 = 	1.0
+sSliceArray.asSlice[34].dThickness	 = 	2.5
+sSliceArray.asSlice[34].dPhaseFOV	 = 	200.0
+sSliceArray.asSlice[34].dReadoutFOV	 = 	320.0
+sSliceArray.asSlice[34].dInPlaneRot	 = 	1.57079632679
+sSliceArray.asSlice[34].sPosition.dTra	 = 	72.5
+sSliceArray.asSlice[34].sNormal.dTra	 = 	1.0
+sSliceArray.asSlice[35].dThickness	 = 	2.5
+sSliceArray.asSlice[35].dPhaseFOV	 = 	200.0
+sSliceArray.asSlice[35].dReadoutFOV	 = 	320.0
+sSliceArray.asSlice[35].dInPlaneRot	 = 	1.57079632679
+sSliceArray.asSlice[35].sPosition.dTra	 = 	77.5
+sSliceArray.asSlice[35].sNormal.dTra	 = 	1.0
+sSliceArray.asSlice[36].dThickness	 = 	2.5
+sSliceArray.asSlice[36].dPhaseFOV	 = 	200.0
+sSliceArray.asSlice[36].dReadoutFOV	 = 	320.0
+sSliceArray.asSlice[36].dInPlaneRot	 = 	1.57079632679
+sSliceArray.asSlice[36].sPosition.dTra	 = 	82.5
+sSliceArray.asSlice[36].sNormal.dTra	 = 	1.0
+sSliceArray.asSlice[37].dThickness	 = 	2.5
+sSliceArray.asSlice[37].dPhaseFOV	 = 	200.0
+sSliceArray.asSlice[37].dReadoutFOV	 = 	320.0
+sSliceArray.asSlice[37].dInPlaneRot	 = 	1.57079632679
+sSliceArray.asSlice[37].sPosition.dTra	 = 	87.5
+sSliceArray.asSlice[37].sNormal.dTra	 = 	1.0
+sSliceArray.asSlice[38].dThickness	 = 	2.5
+sSliceArray.asSlice[38].dPhaseFOV	 = 	200.0
+sSliceArray.asSlice[38].dReadoutFOV	 = 	320.0
+sSliceArray.asSlice[38].dInPlaneRot	 = 	1.57079632679
+sSliceArray.asSlice[38].sPosition.dTra	 = 	92.5
+sSliceArray.asSlice[38].sNormal.dTra	 = 	1.0
+sSliceArray.asSlice[39].dThickness	 = 	2.5
+sSliceArray.asSlice[39].dPhaseFOV	 = 	200.0
+sSliceArray.asSlice[39].dReadoutFOV	 = 	320.0
+sSliceArray.asSlice[39].dInPlaneRot	 = 	1.57079632679
+sSliceArray.asSlice[39].sPosition.dTra	 = 	97.5
+sSliceArray.asSlice[39].sNormal.dTra	 = 	1.0
 sSliceArray.alSliceAcqOrder.__attribute__.size	 = 	256
 sSliceArray.alSliceAcqOrder[1]	 = 	1
 sSliceArray.alSliceAcqOrder[2]	 = 	2
@@ -322,6 +775,19 @@ sSliceArray.alSliceAcqOrder[23]	 = 	23
 sSliceArray.alSliceAcqOrder[24]	 = 	24
 sSliceArray.alSliceAcqOrder[25]	 = 	25
 sSliceArray.alSliceAcqOrder[26]	 = 	26
+sSliceArray.alSliceAcqOrder[27]	 = 	27
+sSliceArray.alSliceAcqOrder[28]	 = 	28
+sSliceArray.alSliceAcqOrder[29]	 = 	29
+sSliceArray.alSliceAcqOrder[30]	 = 	30
+sSliceArray.alSliceAcqOrder[31]	 = 	31
+sSliceArray.alSliceAcqOrder[32]	 = 	32
+sSliceArray.alSliceAcqOrder[33]	 = 	33
+sSliceArray.alSliceAcqOrder[34]	 = 	34
+sSliceArray.alSliceAcqOrder[35]	 = 	35
+sSliceArray.alSliceAcqOrder[36]	 = 	36
+sSliceArray.alSliceAcqOrder[37]	 = 	37
+sSliceArray.alSliceAcqOrder[38]	 = 	38
+sSliceArray.alSliceAcqOrder[39]	 = 	39
 sSliceArray.anAsc.__attribute__.size	 = 	256
 sSliceArray.anAsc[1]	 = 	1
 sSliceArray.anAsc[2]	 = 	2
@@ -349,6 +815,19 @@ sSliceArray.anAsc[23]	 = 	23
 sSliceArray.anAsc[24]	 = 	24
 sSliceArray.anAsc[25]	 = 	25
 sSliceArray.anAsc[26]	 = 	26
+sSliceArray.anAsc[27]	 = 	27
+sSliceArray.anAsc[28]	 = 	28
+sSliceArray.anAsc[29]	 = 	29
+sSliceArray.anAsc[30]	 = 	30
+sSliceArray.anAsc[31]	 = 	31
+sSliceArray.anAsc[32]	 = 	32
+sSliceArray.anAsc[33]	 = 	33
+sSliceArray.anAsc[34]	 = 	34
+sSliceArray.anAsc[35]	 = 	35
+sSliceArray.anAsc[36]	 = 	36
+sSliceArray.anAsc[37]	 = 	37
+sSliceArray.anAsc[38]	 = 	38
+sSliceArray.anAsc[39]	 = 	39
 sSliceArray.anPos.__attribute__.size	 = 	256
 sSliceArray.anPos[1]	 = 	1
 sSliceArray.anPos[2]	 = 	2
@@ -376,12 +855,25 @@ sSliceArray.anPos[23]	 = 	23
 sSliceArray.anPos[24]	 = 	24
 sSliceArray.anPos[25]	 = 	25
 sSliceArray.anPos[26]	 = 	26
+sSliceArray.anPos[27]	 = 	27
+sSliceArray.anPos[28]	 = 	28
+sSliceArray.anPos[29]	 = 	29
+sSliceArray.anPos[30]	 = 	30
+sSliceArray.anPos[31]	 = 	31
+sSliceArray.anPos[32]	 = 	32
+sSliceArray.anPos[33]	 = 	33
+sSliceArray.anPos[34]	 = 	34
+sSliceArray.anPos[35]	 = 	35
+sSliceArray.anPos[36]	 = 	36
+sSliceArray.anPos[37]	 = 	37
+sSliceArray.anPos[38]	 = 	38
+sSliceArray.anPos[39]	 = 	39
 sSliceArray.sTSat.dThickness	 = 	50.0
 sSliceArray.sTSat.ulShape	 = 	1
 sGroupArray.lSize	 = 	1
 sGroupArray.asGroup.__attribute__.size	 = 	256
-sGroupArray.asGroup[0].nSize	 = 	27
-sGroupArray.asGroup[0].dDistFact	 = 	0.25
+sGroupArray.asGroup[0].nSize	 = 	40
+sGroupArray.asGroup[0].dDistFact	 = 	1.0
 sGroupArray.anMember.__attribute__.size	 = 	258
 sGroupArray.anMember[1]	 = 	1
 sGroupArray.anMember[2]	 = 	2
@@ -409,9 +901,21 @@ sGroupArray.anMember[23]	 = 	23
 sGroupArray.anMember[24]	 = 	24
 sGroupArray.anMember[25]	 = 	25
 sGroupArray.anMember[26]	 = 	26
-sGroupArray.anMember[27]	 = 	-1
+sGroupArray.anMember[27]	 = 	27
+sGroupArray.anMember[28]	 = 	28
+sGroupArray.anMember[29]	 = 	29
+sGroupArray.anMember[30]	 = 	30
+sGroupArray.anMember[31]	 = 	31
+sGroupArray.anMember[32]	 = 	32
+sGroupArray.anMember[33]	 = 	33
+sGroupArray.anMember[34]	 = 	34
+sGroupArray.anMember[35]	 = 	35
+sGroupArray.anMember[36]	 = 	36
+sGroupArray.anMember[37]	 = 	37
+sGroupArray.anMember[38]	 = 	38
+sGroupArray.anMember[39]	 = 	39
+sGroupArray.anMember[40]	 = 	-1
 sGroupArray.sPSat.dThickness	 = 	50.0
-sGroupArray.sPSat.dGap	 = 	10.0
 sGroupArray.sPSat.ulShape	 = 	1
 sRSatArray.asElm.__attribute__.size	 = 	8
 sRSatArray.asElm[0].ulShape	 = 	1
@@ -456,7 +960,7 @@ sPrepPulses.ucBloodSuppression	 = 	1
 sPrepPulses.lPhaseCorrectionMode	 = 	1
 sPrepPulses.ucIRScheme	 = 	1
 sPrepPulses.lFatSupOpt	 = 	1
-sPrepPulses.lFatWaterContrast	 = 	4
+sPrepPulses.lFatWaterContrast	 = 	1
 sPrepPulses.adT2PrepDuration.__attribute__.size	 = 	1
 sPrepPulses.adT2PrepDuration[0]	 = 	40.0
 sKSpace.dPhaseResolution	 = 	1.0
@@ -465,13 +969,13 @@ sKSpace.dAngioDynCentralRegionA	 = 	20.0
 sKSpace.dAngioDynSamplingDensityB	 = 	25.0
 sKSpace.dSeqPhasePartialFourierForSNR	 = 	1.0
 sKSpace.lBaseResolution	 = 	64
-sKSpace.lPhaseEncodingLines	 = 	64
-sKSpace.lPartitions	 = 	64
-sKSpace.lImagesPerSlab	 = 	64
+sKSpace.lPhaseEncodingLines	 = 	40
+sKSpace.lPartitions	 = 	16
+sKSpace.lImagesPerSlab	 = 	16
 sKSpace.lRadialViews	 = 	64
 sKSpace.lRadialInterleavesPerImage	 = 	1
 sKSpace.lLinesPerShot	 = 	1
-sKSpace.unReordering	 = 	1
+sKSpace.unReordering	 = 	2
 sKSpace.ucPhasePartialFourier	 = 	16
 sKSpace.ucSlicePartialFourier	 = 	16
 sKSpace.ucAveragingMode	 = 	2
@@ -489,10 +993,11 @@ sKSpace.lTrajectoryOptimization	 = 	0
 sKSpace.DistributionAsymmetry	 = 	0
 sKSpace.SpiralInterleaves	 = 	1
 sKSpace.PhaseEncOrder	 = 	0
-sFastImaging.lEPIFactor	 = 	128
-sFastImaging.lTurboFactor	 = 	1
+sFastImaging.lEPIFactor	 = 	1
+sFastImaging.lTurboFactor	 = 	40
 sFastImaging.lSliceTurboFactor	 = 	1
 sFastImaging.lSegments	 = 	1
+sFastImaging.ulEnableRFSpoiling	 = 	0x1
 sFastImaging.ucPhaseEncRE	 = 	0x0
 sFastImaging.ucSegmentationMode	 = 	1
 sFastImaging.lShots	 = 	1
@@ -537,6 +1042,7 @@ sPhysioImaging.sPhysioBeatSensor.lAcquisitionPosition	 = 	1
 sPhysioImaging.sPhysioResp.lRespGateThreshold	 = 	20
 sPhysioImaging.sPhysioResp.lRespGatePhase	 = 	2
 sPhysioImaging.sPhysioResp.dGatingRatio	 = 	0.3
+sPhysioImaging.sPhysioResp.lAcqusitionWindowPercent	 = 	25
 sPhysioImaging.sPhysioNative.ucMode	 = 	1
 sPhysioImaging.sPhysioNative.ucFlowSenMode	 = 	1
 sSpecPara.lPhaseCyclingType	 = 	1
@@ -550,7 +1056,6 @@ sSpecPara.lNOEType	 = 	1
 sSpecPara.lExcitationType	 = 	1
 sSpecPara.lSpecAppl	 = 	1
 sSpecPara.lSpectralSuppression	 = 	1
-sSpecPara.sVoI.sPosition.dTra	 = 	1998.0
 sDiffusion.ulMode	 = 	1
 sDiffusion.dsScheme	 = 	1
 sDiffusion.ulQSpaceCoverage	 = 	1
@@ -567,16 +1072,12 @@ sAngio.lDynamicReconMode	 = 	1
 sAngio.lTemporalInterpolation	 = 	1
 sAngio.sFlowArray.asElm.__attribute__.size	 = 	16
 sPreScanNormalizeFilter.ucMode	 = 	2
-sRawFilter.lSlope_256	 = 	64
-sRawFilter.ucOn	 = 	0x1
-sRawFilter.ucMode	 = 	4
 sDistortionCorrFilter.ucMode	 = 	2
 sNoiseDecorrData.lNoiseDecorrDefaultMode	 = 	4
 sPat.lAccelFactPE	 = 	1
 sPat.lAccelFact3D	 = 	1
 sPat.ucPATMode	 = 	1
 sPat.ucRefScanMode	 = 	1
-sPat.ucTPatAverageAllFrames	 = 	0x1
 sPat.ulCaipirinhaMode	 = 	1
 sPat.lAccelFactPeriph	 = 	16
 sPat.lAccelFactCenter	 = 	3
@@ -607,10 +1108,12 @@ sMds.sMdsPreScanNormalize.ucMode	 = 	2
 sMds.sMdsPreScanNormalize.ucStackMode	 = 	4
 sMds.sMdsPreScanNormalize.lNPELin	 = 	18
 sAAInitialOffset.Laterality	 = 	0
+sAAInitialOffset.SliceInformation.dInPlaneRot	 = 	1.57079632679
 sAAInitialOffset.SliceInformation.sNormal.dTra	 = 	1.0
 alRepetitionsDelayTimeMs.__attribute__.size	 = 	64
 adFlipAngleDegree.__attribute__.size	 = 	32
-adFlipAngleDegree[0]	 = 	90.0
+adFlipAngleDegree[0]	 = 	6.0
+adFlipAngleDegree[1]	 = 	8.0
 aulServicePara.__attribute__.size	 = 	5
 uiPerProxy2Skip.__attribute__.size	 = 	2
 sCoilSelectMeas.sCoilContext	 = 	"InvalidContext"
@@ -649,10 +1152,13 @@ sCoilSelectMeas.CoilPlugs.Plug[8].IdPart.__attribute__.size	 = 	8
 sCoilSelectMeas.CoilPlugs.Plug[9].IdPart.__attribute__.size	 = 	8
 sCoilSelectMeas.CoilPlugs.Plug[10].IdPart.__attribute__.size	 = 	8
 sWipMemBlock.alFree.__attribute__.size	 = 	64
-sWipMemBlock.alFree[3]	 = 	1
-sWipMemBlock.alFree[4]	 = 	1
+sWipMemBlock.alFree[3]	 = 	20
+sWipMemBlock.alFree[9]	 = 	80
+sWipMemBlock.alFree[11]	 = 	1
 sWipMemBlock.alFree[63]	 = 	12345
 sWipMemBlock.adFree.__attribute__.size	 = 	16
+sWipMemBlock.adFree[5]	 = 	0.000300000014249
+sWipMemBlock.adFree[10]	 = 	9.0
 sWipMemBlock.adRes.__attribute__.size	 = 	3
 ucBOLDParadigmArray.__attribute__.size	 = 	256
 sParametricMapping.ucParametricMap	 = 	1
@@ -713,11 +1219,11 @@ sDixonData.sMrDixonEvaluationOptions.ucDixonEvaT2Star	 = 	0x0
 sDixonData.sMrDixonEvaluationOptions.ucDixonEvaR2Star	 = 	0x0
 sDixonData.sMrDixonEvaluationOptions.ucDixonEvaReport	 = 	0x0
 asDynamicAdjustVolumes.__attribute__.size	 = 	0
-sCommonIterRecon.lIterations	 = 	30
-sCommonIterRecon.eReconMethod	 = 	1
-sCommonIterRecon.dRegularization	 = 	9.99999974738e-06
+sCommonIterRecon.lIterations	 = 	15
+sCommonIterRecon.eReconMethod	 = 	2
+sCommonIterRecon.dRegularization	 = 	0.000199999994948
 sCommonIterRecon.eDenoisingMode	 = 	1
-sCommonIterRecon.lDenoisingStrength	 = 	5
+sCommonIterRecon.lDenoisingStrength	 = 	50
 sCommonIterRecon.dScalingFactor	 = 	0.0
 sCommonIterRecon.dTemporalScaleFactor	 = 	5.0
 sCommonIterRecon.dThresholdWavelet	 = 	0.00700000021607

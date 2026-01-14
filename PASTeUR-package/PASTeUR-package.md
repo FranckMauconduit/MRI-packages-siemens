@@ -45,6 +45,7 @@ Proceedings of the ISMRM 2018, Paris, France, p1133. https://archive.ismrm.org/2
 
 ## Versions
 
+<!--
 - Version 2.0
 
 An EP3D sequence is added to the package.
@@ -54,6 +55,7 @@ Slab-selective universal pulses are available for all sequences.
 CAIPIRINHA acceleration is available for all sequences.
 
 Sequence specific improvements are added to the package.
+-->
 
 - Version 1.31
 

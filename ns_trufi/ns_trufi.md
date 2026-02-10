@@ -6,7 +6,7 @@ The ns_trufi sequence is based on Siemens product trufi sequence on which X-nucl
 
 ## Information
 
-- Softawre versions: VB17, VE11C, VE11E, VE12U-AP01, VE12U-SP01, VE12U-AP04, XA20
+- Softawre versions: VE11C, VE11E, VE12U-SP01, VE12U-AP04, XA60, XA61
 
 - Accessing the package: either using the Siemens C2P platform (https://webclient.eu.api.teamplay.siemens.com/#/c2p) or using a classic Siemens C2P paperwork.
 

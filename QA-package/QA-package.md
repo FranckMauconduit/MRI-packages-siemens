@@ -7,11 +7,12 @@ The package is designed to acquire the data in a fast manner on a spherical fant
 
 ## Notice
 
-XA30, XA60 are now available !
+XA61 is now available on the C2P platform!
+A license file update has been delivered by mail on March 11th. If you did not receive this email and want to continue using the package, please send me an email.
 
 ## Information
 
-- Software versions: VE11C, VE11E, VE12U-AP01, VE12U-SP01, XA30, XA60
+- Software versions: VE11C, VE11E, VE12U (all sub-versions), XA30, XA60, XA61
 
 - Accessing the package: either using the Siemens C2P platform (https://webclient.eu.api.teamplay.siemens.com/#/c2p) or using a classic Siemens C2P paperwork.
 

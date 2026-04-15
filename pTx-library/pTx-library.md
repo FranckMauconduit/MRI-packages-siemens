@@ -1,5 +1,5 @@
 # pTx library
-> A pTx library to include external pTx pulses into sequences for Terra systems
+> A pTx library to include external pTx pulses into sequences for Terra and Terra.X systems
 
 ## Short description
 
@@ -8,7 +8,7 @@ gradient and RF informations, as well as the pulse duration, the nominal flip an
 
 ## Information
 
-- Softawre versions: VE12U, VE12U-AP01, VE12U-SP01, VE12U-AP04
+- Softawre versions: VE12U (all subversions), XA60, XB10
 
 - Accessing the library: either using the Siemens C2P platform (https://webclient.eu.api.teamplay.siemens.com/#/c2p) or using a classic Siemens C2P paperwork.
 

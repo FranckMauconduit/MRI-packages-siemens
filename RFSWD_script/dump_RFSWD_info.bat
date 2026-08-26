@@ -23,15 +23,33 @@ TRAMPOLINE
 echo
 echo --------------------------------------- 
 echo Script: `/usr/bin/basename $0`
-echo Version: 1.0
+echo Version: VE12U 1.1
 echo Author:  Franck Mauconduit
 echo For more info, see:
 echo https://github.com/FranckMauconduit/MRI-packages-siemens
 echo --------------------------------------- 
 
+#MARS
+ROOTFOLDER=/opt/medcom
+TEMPFOLDER=/tmp
 
-ROOTFOLDER=/cygdrive/c/MedCom
+#PC
+if [[ ! -d $ROOTFOLDER ]]; then
+ROOTFOLDER=/cygdrive/c/medcom
 TEMPFOLDER=$ROOTFOLDER/temp
+fi
+
+if [[ ! -d $ROOTFOLDER ]]; then
+    echo Folder $ROOTFOLDER does not exist, aborting ...
+    read -p "Press enter to exit"
+    exit 1
+fi
+
+if [[ ! -d $TEMPFOLDER ]]; then
+    echo Folder $TEMPFOLDER does not exist, aborting ...
+    read -p "Press enter to exit"
+    exit 1
+fi
 
 RFSWDFile=$ROOTFOLDER/log/RFSWDHistoryListNew.log
 
@@ -94,6 +112,8 @@ echo                                                                            
 /usr/bin/grep " TX pulse amplitude " $RFSWDFileTemp | /usr/bin/tail -n 10           >> $RFSWD_Info1
 /usr/bin/grep "^ 402 " $RFSWDFileTemp | /usr/bin/tail -n 1                          >> $RFSWD_Info1
 /usr/bin/grep "^ 403 " $RFSWDFileTemp | /usr/bin/tail -n 1                          >> $RFSWD_Info1
+/usr/bin/grep "^ 404 " $RFSWDFileTemp | /usr/bin/tail -n 1                          >> $RFSWD_Info1
+/usr/bin/grep "^ 412 " $RFSWDFileTemp | /usr/bin/tail -n 1                          >> $RFSWD_Info1
 /usr/bin/grep "^1200 " $RFSWDFileTemp | /usr/bin/tail -n 1                          >> $RFSWD_Info1
 /usr/bin/grep "^1211 " $RFSWDFileTemp | /usr/bin/tail -n 1                          >> $RFSWD_Info1
 /usr/bin/grep "^ 610 " $RFSWDFileTemp | /usr/bin/tail -n 1                          >> $RFSWD_Info1
@@ -162,7 +182,30 @@ echo                                                                            
 /usr/bin/grep "PALIResultsMaxNB  j\[3\]v\[7\] " $RFSWDFileTemp | /usr/bin/tail -n 1 | /usr/bin/sed s/"PALIResultsMaxNB  j\[3\]v\[7\] "/"Meas  10s    : TALES fwd e."/1  >> $RFSWD_Info3b
 /usr/bin/grep "PALILimitsNB      j\[3\]v\[7\] " $RFSWDFileTemp | /usr/bin/tail -n 1 | /usr/bin/sed s/"PALILimitsNB      j\[3\]v\[7\] "/"Limit 10s    : TALES fwd e."/1  >> $RFSWD_Info3b
 echo                                                                                                                                                                    >> $RFSWD_Info3b
+
+for i in `seq 0 7`; do
+    echo "      PALI Peak ch. $((i+1)) : $(getPALIPeak $i)" >> $RFSWD_Info3b
+done
+
 # echo get_rfswd_info3b done.
+}
+function getPALIPeak
+{
+StrForw=$(/usr/bin/grep "PALIPeakPowerForwLC t\[ $i\] " $RFSWDFileTemp | /usr/bin/tail -n 1 | /usr/bin/sed s/".*:"//1 | /usr/bin/sed s/"W.*"//1 )
+StrRefl=$(/usr/bin/grep "PALIPeakPowerReflLC t\[ $i\] " $RFSWDFileTemp | /usr/bin/tail -n 1 | /usr/bin/sed s/".*:"//1 | /usr/bin/sed s/"W.*"//1 )
+if [[ -z $StrForw ]] || [[ -z $StrRefl ]]; then
+    echo no value
+    exit
+fi
+FloatForw=$(bc -l <<< "scale=2; $StrForw/1")
+FloatRefl=$(bc -l <<< "scale=2; $StrRefl/1")
+if [[ $FloatForw == 0 ]]; then
+    FloatPercent=0
+else
+    FloatPercent=$(bc -l <<< "scale=2; 100*$FloatRefl/$FloatForw")
+fi
+# echo $FloatForw W / $FloatRefl W / $(bc -l <<< "scale=2; 100*$FloatRefl/$FloatForw") %
+printf "%7s W / %6s W / %5s %%" $FloatForw $FloatRefl $FloatPercent 
 }
 function get_rfswd_info4
 {
@@ -311,6 +354,7 @@ function question_main
     echo    1 - Display RFSWD of latest protocol
     echo    2 - Show all protocols
     echo    3 - Change RFSWD file
+    echo    q - quit this tool
     echo
     read -p "Answer: " mainres
     # echo $mainres
@@ -321,6 +365,8 @@ function question_main
         print_prot_list
     elif [ "$mainres" == 3 ] || [ "$mainres" == "\"" ]; then
         change_rfswd_file
+	elif [ "$mainres" == "q" ] || [ "$mainres" == "Q" ]; then
+		exit 0
     fi
     
 }

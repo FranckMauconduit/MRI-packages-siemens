@@ -7,7 +7,7 @@ The QA pTx package contains a custom B1+ map sequence (based on tfl_rfmap) to ma
 
 ## Information
 
-- Softawre versions: VB17 Step2.3, VE12U-SP01, VE12U-AP04
+- Softawre versions: VE12U (all subversions), XA60
 
 - Accessing the package: either using the Siemens C2P platform (https://webclient.eu.api.teamplay.siemens.com/#/c2p) or using a classic Siemens C2P paperwork.
 
@@ -22,3 +22,10 @@ The QA pTx package contains a custom B1+ map sequence (based on tfl_rfmap) to ma
 
 A list of suggested protocols is available [here](https://github.com/FranckMauconduit/MRI-packages-siemens/blob/main/QA-pTx-package/protocols/)
 
+## Versions
+
+- Version 1.3
+
+XA release available in this version
+Gradient whisper mode to minimize ghosting signal
+Distribute slice acquisition over the TR

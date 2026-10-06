@@ -26,6 +26,8 @@ A list of suggested protocols is available [here](https://github.com/FranckMauco
 
 - Version 1.3
 
-XA release available in this version
+XA60 release available in this version
+
 Gradient whisper mode to minimize ghosting signal
+
 Distribute slice acquisition over the TR
